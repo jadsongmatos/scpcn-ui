@@ -4,7 +4,7 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { buttonVariants } from "@/components/ui/warcraftcn/button";
 
-import "@/components/ui/warcraftcn/styles/warcraft.css";
+import "@/components/ui/warcraftcn/styles/scp.css";
 
 const Pagination = ({ className, ...props }: React.ComponentProps<"nav">) => (
   <nav
@@ -54,11 +54,11 @@ const PaginationLink = ({
       buttonVariants({
         variant: "frame",
       }),
-      "border-solid [border-image-repeat:stretch] border-5 [border-image-slice:16_fill] wc-btn-border-frame transition-all duration-200",
+      "border-solid [border-image-repeat:stretch] border-5 [border-image-slice:16_fill] scp-btn-border-frame transition-all duration-200",
       "w-10 h-10 px-0 sm:w-12 sm:h-12 flex items-center justify-center font-bold no-underline",
       isActive
-        ? "text-amber-200 [text-shadow:0_0_8px_rgba(251,191,36,0.6)] shadow-[inset_0_0_10px_rgba(0,0,0,0.8)] brightness-110"
-        : "text-amber-100/70 hover:text-amber-100 hover:brightness-110",
+        ? "text-red-200 [text-shadow:0_0_8px_rgba(204,51,51,0.6)] shadow-[inset_0_0_10px_rgba(0,0,0,0.8)] brightness-110"
+        : "text-gray-200/70 hover:text-gray-200 hover:brightness-110",
       disabled && "opacity-50 pointer-events-none cursor-not-allowed",
       className
     )}
@@ -76,7 +76,7 @@ const PaginationPrevious = ({
     className={cn("gap-1 sm:w-auto sm:px-4 sm:pr-5", className)}
     {...props}
   >
-    <ChevronLeft className="h-4 w-4 text-amber-500 filter-[drop-shadow(0_0_2px_rgba(245,158,11,0.5))]" />
+    <ChevronLeft className="h-4 w-4 text-red-500 filter-[drop-shadow(0_0_2px_rgba(204,51,51,0.5))]" />
     <span className="hidden sm:block">Previous</span>
   </PaginationLink>
 );
@@ -92,7 +92,7 @@ const PaginationNext = ({
     {...props}
   >
     <span className="hidden sm:block">Next</span>
-    <ChevronRight className="h-4 w-4 text-amber-500 filter-[drop-shadow(0_0_2px_rgba(245,158,11,0.5))]" />
+    <ChevronRight className="h-4 w-4 text-red-500 filter-[drop-shadow(0_0_2px_rgba(204,51,51,0.5))]" />
   </PaginationLink>
 );
 PaginationNext.displayName = "PaginationNext";
@@ -110,7 +110,7 @@ const PaginationEllipsis = ({
   >
     <span 
       aria-hidden="true"
-      className="text-amber-500/60 font-bold tracking-[2px] text-xs [text-shadow:0_0_4px_rgba(245,158,11,0.3)]"
+      className="text-red-500/60 font-bold tracking-[2px] text-xs [text-shadow:0_0_4px_rgba(204,51,51,0.3)]"
     >
       ♦ ♦ ♦
     </span>

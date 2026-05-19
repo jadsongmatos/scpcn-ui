@@ -39,10 +39,10 @@ interface Contributor {
   contributions: number;
 }
 
-const FACTIONS = ["orc", "elf", "human", "undead"] as const;
+const CLASSIFICATIONS = ["keter", "euclid", "thaumiel", "apollyon"] as const;
 
-function getRandomFaction(id: number): "orc" | "elf" | "human" | "undead" {
-  return FACTIONS[id % FACTIONS.length];
+function getRandomClassification(id: number): "keter" | "euclid" | "thaumiel" | "apollyon" {
+  return CLASSIFICATIONS[id % CLASSIFICATIONS.length];
 }
 
 export default async function ContributorsPage() {
@@ -92,7 +92,7 @@ export default async function ContributorsPage() {
             <CardHeader className="flex flex-col items-center gap-4 text-center">
               <Avatar
                 alt={`${contributor.login}'s avatar`}
-                faction={getRandomFaction(contributor.id)}
+                classification={getRandomClassification(contributor.id)}
                 fallback={contributor.login.charAt(0).toUpperCase()}
                 src={contributor.avatar_url}
               />

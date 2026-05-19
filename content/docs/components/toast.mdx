@@ -1,6 +1,6 @@
 ---
 title: Toast
-description: Warcraft-themed toast notification 
+description: SCP Foundation-themed toast notification
 ---
 
 import { ToastExample } from "@/components/ui/warcraftcn/example/ToastExample"
@@ -10,7 +10,7 @@ import { ToastExample } from "@/components/ui/warcraftcn/example/ToastExample"
 ## Installation
 
 ```bash
-pnpm dlx shadcn@latest add https://warcraftcn.com/r/toast.json
+pnpm dlx shadcn@latest add https://scpcn.com/r/toast.json
 ```
 
 ## Usage
@@ -20,14 +20,14 @@ import { triggerScrollToast } from "@/components/ui/warcraftcn/toast";
 import { Button } from "@/components/ui/warcraftcn/button";
 
 export default function ToastExample() {
-  return (
-    <Button
-        variant="frame"
-        onClick={() => triggerScrollToast({ message: "This is test" })}
-        className="w-[200px] md:min-w-xs py-3 px-6"
-    >
-      Show Toast
-    </Button>
-  );
+return (
+<Button
+variant="frame"
+onClick={() => triggerScrollToast({ message: "This is test" })}
+className="w-[200px] md:min-w-xs py-3 px-6"
+>
+Show Toast
+</Button>
+);
 }
 ```

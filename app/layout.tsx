@@ -14,9 +14,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "warcraftcn - Warcraft UI components",
+  title: "SCP-CN UI — Foundation-style UI components",
   description:
-    "A set of components inspired by classic Warcraft III RTS UI aesthetics. Open source, copy paste ready. Works with your favorite frameworks. Fan made. No affiliation.",
+    "A set of components inspired by SCP Foundation bureaucratic aesthetics. Clinical, monospace, redacted. Open source, copy paste ready. Works with your favorite frameworks.",
   openGraph: {
     images: "/warcraftcn-og.png",
   },

@@ -1,45 +1,45 @@
 "use client";
 
 import * as React from "react";
-import { Checkbox as CheckboxPrimitive } from "radix-ui";
+import { Checkbox as CheckboxPrimitive } from "@base-ui/react/checkbox";
 import { cva, type VariantProps } from "class-variance-authority";
 
 import { cn } from "@/lib/utils";
 
-import "@/components/ui/warcraftcn/styles/warcraft.css";
+import "@/components/ui/warcraftcn/styles/scp.css";
 
 const checkboxVariants = cva(
-  "inline-flex items-center gap-3 cursor-pointer select-none fantasy mb-2 font-bold",
+  "inline-flex items-center gap-3 cursor-pointer select-none institutional mb-2 font-bold",
   {
     variants: {
-      faction: {
-        default: "text-yellow-800 dark:text-yellow-100",
-        orc: "text-red-700 dark:text-red-100",
-        elf: "text-green-700 dark:text-green-100",
-        human: "text-blue-700 dark:text-blue-100",
-        undead: "text-purple-700 dark:text-purple-100",
+      classification: {
+        safe: "text-green-700 dark:text-green-100",
+        euclid: "text-yellow-700 dark:text-yellow-100",
+        keter: "text-red-700 dark:text-red-100",
+        thaumiel: "text-purple-700 dark:text-purple-100",
+        apollyon: "text-red-900 dark:text-red-200",
       },
     },
     defaultVariants: {
-      faction: "default",
+      classification: "safe",
     },
   }
 );
 
-type Faction = "default" | "orc" | "elf" | "human" | "undead";
+type Classification = "safe" | "euclid" | "keter" | "thaumiel" | "apollyon";
 
 interface CheckboxProps
   extends Omit<
-      React.ComponentProps<typeof CheckboxPrimitive.Root>,
-      "children" | "asChild"
-    >,
+    React.ComponentProps<typeof CheckboxPrimitive.Root>,
+    "children" | "asChild"
+  >,
     VariantProps<typeof checkboxVariants> {
-  faction?: Faction;
+  classification?: Classification;
   children?: React.ReactNode;
 }
 
 function Checkbox({
-  faction = "default",
+  classification = "safe",
   children,
   className,
   disabled,
@@ -50,13 +50,13 @@ function Checkbox({
     <label
       htmlFor={id}
       className={cn(
-        checkboxVariants({ faction }),
+        checkboxVariants({ classification }),
         disabled && "opacity-50 cursor-not-allowed"
       )}
     >
       <CheckboxPrimitive.Root
         data-slot="checkbox"
-        className={cn("wc-checkbox", `wc-checkbox-${faction}`, className)}
+        className={cn("scp-checkbox", `scp-checkbox-${classification === "safe" ? "default" : classification}`, className)}
         disabled={disabled}
         id={id}
         {...props}
@@ -69,4 +69,4 @@ function Checkbox({
 }
 
 export { Checkbox, checkboxVariants };
-export type { CheckboxProps, Faction };
+export type { CheckboxProps, Classification };

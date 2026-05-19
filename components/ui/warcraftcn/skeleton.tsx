@@ -3,27 +3,27 @@ import type * as React from "react";
 
 import { cn } from "@/lib/utils";
 
-import "@/components/ui/warcraftcn/styles/warcraft.css";
+import "@/components/ui/warcraftcn/styles/scp.css";
 
 const skeletonVariants = cva(
-  "fantasy relative overflow-hidden",
+  "institutional relative overflow-hidden",
   {
     variants: {
       variant: {
         default: "rounded-md",
         circular: "rounded-full",
       },
-      faction: {
-        default: "wc-skeleton",
-        orc: "wc-skeleton-orc",
-        elf: "wc-skeleton-elf",
-        human: "wc-skeleton-human",
-        undead: "wc-skeleton-undead",
+      classification: {
+        safe: "scp-skeleton",
+        keter: "scp-skeleton-keter",
+        thaumiel: "scp-skeleton-thaumiel",
+        euclid: "scp-skeleton-euclid",
+        apollyon: "scp-skeleton-apollyon",
       },
     },
     defaultVariants: {
       variant: "default",
-      faction: "default",
+      classification: "safe",
     },
   }
 );
@@ -31,19 +31,17 @@ const skeletonVariants = cva(
 function Skeleton({
   className,
   variant,
-  faction,
+  classification,
   ...props
 }: React.ComponentProps<"div"> & VariantProps<typeof skeletonVariants>) {
   return (
     <div
-      className={cn(skeletonVariants({ variant, faction }), className)}
+      className={cn(skeletonVariants({ variant, classification }), className)}
       data-slot="skeleton"
       {...props}
     >
-      {/* Faction icon overlay with pulse animation */}
-      <div className="wc-skeleton-icons" aria-hidden="true" />
-      {/* Shimmer effect overlay */}
-      <div className="wc-skeleton-shimmer" aria-hidden="true" />
+      <div className="scp-skeleton-icons" aria-hidden="true" />
+      <div className="scp-skeleton-shimmer" aria-hidden="true" />
     </div>
   );
 }

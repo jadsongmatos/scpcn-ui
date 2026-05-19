@@ -1,18 +1,18 @@
 "use client";
 
 import * as React from "react";
-import { Accordion as AccordionPrimitive } from "radix-ui";
+import { Accordion as AccordionPrimitive } from "@base-ui/react/accordion";
 import { cva, type VariantProps } from "class-variance-authority";
 
 import { cn } from "@/lib/utils";
 
-import "@/components/ui/warcraftcn/styles/warcraft.css";
+import "@/components/ui/warcraftcn/styles/scp.css";
 
 const accordionRootVariants = cva("flex w-full flex-col", {
   variants: {
     variant: {
       default:
-        "fantasy rounded-xl relative flex gap-2 py-[0.6rem] px-[0.7rem] text-[hsl(0_0%_95%)] bg-transparent shadow-none before:content-none after:content-none",
+        "institutional rounded-xl relative flex gap-2 py-[0.6rem] px-[0.7rem] text-[hsl(0_0%_95%)] bg-transparent shadow-none before:content-none after:content-none",
     },
   },
   defaultVariants: {
@@ -31,15 +31,34 @@ const AccordionStyleContext = React.createContext<{
 function Accordion({
   className,
   variant,
+  type,
+  collapsible,
+  value,
+  defaultValue,
+  onValueChange,
   ...props
-}: React.ComponentProps<typeof AccordionPrimitive.Root> &
-  AccordionVariantProps) {
+}: Omit<React.ComponentProps<typeof AccordionPrimitive.Root>, "value" | "defaultValue" | "onValueChange"> &
+  AccordionVariantProps & {
+    type?: "single" | "multiple";
+    collapsible?: boolean;
+    value?: string | string[];
+    defaultValue?: string | string[];
+    onValueChange?: (value: string | string[]) => void;
+  }) {
   const resolvedVariant = variant ?? "default";
+  const isMultiple = type === "multiple";
+
+  void collapsible;
+
   return (
     <AccordionStyleContext.Provider value={{ variant: resolvedVariant }}>
       <AccordionPrimitive.Root
         data-slot="accordion"
         className={cn(accordionRootVariants({ variant }), className)}
+        multiple={isMultiple}
+        value={value as never}
+        defaultValue={defaultValue as never}
+        onValueChange={onValueChange as never}
         {...props}
       />
     </AccordionStyleContext.Provider>
@@ -62,17 +81,16 @@ function AccordionItem({
 function AccordionTrigger({
   className,
   children,
-  icon = "sword",
+  icon = "folder",
   ...props
 }: React.ComponentProps<typeof AccordionPrimitive.Trigger> & {
-  icon?: "sword" | "shield" | "rune-stone";
+  icon?: "folder" | "stamp" | "protocol";
 }) {
   return (
     <AccordionPrimitive.Header
       className={cn(
         "flex",
-
-        "border-solid wc-accordion-header-border [border-image-repeat:stretch]",
+        "border-solid scp-accordion-header-border [border-image-repeat:stretch]",
         "border-6 [border-image-slice:16_fill]",
         "bg-cover bg-center bg-no-repeat",
         "m-0 mt-0 mb-0 min-h-14",
@@ -85,9 +103,9 @@ function AccordionTrigger({
           "focus-visible:ring-ring/50 focus-visible:ring-2",
           "disabled:pointer-events-none disabled:opacity-60",
           "transition-[box-shadow] duration-[420ms] ease-[cubic-bezier(0.22,1,0.36,1)]",
-          "data-[state=open]:shadow-[0_0_0_1px_rgba(255,215,120,0.4),0_0_12px_rgba(255,200,100,0.35),0_0_40px_rgba(255,180,80,0.25),0_20px_40px_rgba(0,0,0,0.45)]",
+          "data-[open]:shadow-[0_0_0_1px_rgba(255,215,120,0.4),0_0_12px_rgba(255,200,100,0.35),0_0_40px_rgba(255,180,80,0.25),0_20px_40px_rgba(0,0,0,0.45)]",
           "after:content-[''] after:absolute after:inset-0 after:bg-[linear-gradient(120deg,transparent_30%,rgba(255,220,140,0.25),transparent_70%)] after:opacity-0 after:pointer-events-none",
-          "data-[state=open]:after:animate-[wc-light-sweep_600ms_ease-out]",
+          "data-[open]:after:animate-[scp-light-sweep_600ms_ease-out]",
           className,
         )}
         {...props}
@@ -97,12 +115,12 @@ function AccordionTrigger({
           data-slot="accordion-trigger-icon"
           aria-hidden="true"
           className={cn(
-            "inline-block bg-center bg-no-repeat bg-contain pointer-events-none absolute right-4 size-4 shrink-0 transition-transform duration-300 group-data-[state=open]/accordion-trigger:rotate-180",
-            icon === "shield"
-              ? "wc-accordion-medieval-icon--shield"
-              : icon === "rune-stone"
-                ? "wc-accordion-medieval-icon--rune-stone"
-                : "wc-accordion-medieval-icon--sword",
+            "inline-block bg-center bg-no-repeat bg-contain pointer-events-none absolute right-4 size-4 shrink-0 transition-transform duration-300 group-data-[open]/accordion-trigger:rotate-180",
+            icon === "stamp"
+              ? "scp-accordion-icon--stamp"
+              : icon === "protocol"
+                ? "scp-accordion-icon--protocol"
+                : "scp-accordion-icon--folder",
           )}
         />
       </AccordionPrimitive.Trigger>
@@ -114,17 +132,15 @@ function AccordionContent({
   className,
   children,
   ...props
-}: React.ComponentProps<typeof AccordionPrimitive.Content>) {
+}: React.ComponentProps<typeof AccordionPrimitive.Panel>) {
   return (
-    <AccordionPrimitive.Content
+    <AccordionPrimitive.Panel
       data-slot="accordion-content"
       className={cn(
         "overflow-hidden text-sm will-change-[height,opacity,filter]",
         "transition-[filter] duration-300 ease-out",
-
-        "wc-accordion-scroll-content data-[state=open]:animate-[wc-accordion-down_200ms_ease-out] data-[state=closed]:animate-[wc-accordion-up_200ms_ease-out]",
-
-        "border-solid wc-accordion-content-border [border-image-repeat:stretch]",
+        "data-[open]:animate-[scp-accordion-down_200ms_ease-out] data-[closed]:animate-[scp-accordion-up_200ms_ease-out]",
+        "border-solid scp-accordion-content-border [border-image-repeat:stretch]",
         "border-0 [border-image-slice:16_fill]",
         "bg-cover bg-center bg-no-repeat",
       )}
@@ -133,9 +149,7 @@ function AccordionContent({
       <div
         className={cn(
           "[&_a]:hover:text-foreground [&_a]:underline [&_a]:underline-offset-3 [&_p:not(:last-child)]:mb-4",
-
           "px-5 pt-2 pb-4",
-
           className,
         )}
       >
@@ -147,10 +161,9 @@ function AccordionContent({
             </span>
           </div>
         </div>
-
         {children}
       </div>
-    </AccordionPrimitive.Content>
+    </AccordionPrimitive.Panel>
   );
 }
 

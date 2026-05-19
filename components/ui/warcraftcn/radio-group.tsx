@@ -1,19 +1,20 @@
 "use client";
 
 import * as React from "react";
-import { RadioGroup as RadioGroupPrimitive } from "radix-ui";
+import { RadioGroup as RadioGroupPrimitive } from "@base-ui/react/radio-group";
+import { Radio as RadioPrimitive } from "@base-ui/react/radio";
 
 import { cn } from "@/lib/utils";
 
-import "@/components/ui/warcraftcn/styles/warcraft.css";
+import "@/components/ui/warcraftcn/styles/scp.css";
 
 interface RadioGroupProps
-  extends React.ComponentProps<typeof RadioGroupPrimitive.Root> {
+  extends React.ComponentProps<typeof RadioGroupPrimitive> {
   orientation?: "vertical" | "horizontal";
 }
 
 type RadioGroupItemProps = React.ComponentProps<
-  typeof RadioGroupPrimitive.Item
+  typeof RadioPrimitive.Root
 >;
 
 function RadioGroup({
@@ -22,14 +23,13 @@ function RadioGroup({
   ...props
 }: RadioGroupProps) {
   return (
-    <RadioGroupPrimitive.Root
+    <RadioGroupPrimitive
       data-slot="radio-group"
       className={cn(
-        "fantasy flex gap-3",
+        "institutional flex gap-3",
         orientation === "horizontal" ? "flex-row flex-wrap" : "flex-col",
         className
       )}
-      orientation={orientation}
       {...props}
     />
   );
@@ -40,13 +40,13 @@ function RadioGroupItem({
   ...props
 }: RadioGroupItemProps) {
   return (
-    <RadioGroupPrimitive.Item
+    <RadioPrimitive.Root
       data-slot="radio-group-item"
-      className={cn("wc-radio-socket", className)}
+      className={cn("scp-radio-socket", className)}
       {...props}
     >
-      <RadioGroupPrimitive.Indicator className="wc-radio-gem" />
-    </RadioGroupPrimitive.Item>
+      <RadioPrimitive.Indicator className="scp-radio-indicator" />
+    </RadioPrimitive.Root>
   );
 }
 

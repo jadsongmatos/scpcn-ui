@@ -21,7 +21,7 @@
     "hooks": "@/hooks"
   },
   "registries": {
-    "@warcraftcn": "https://warcraftcn.com/r/{name}.json",
+    "@scpcn": "https://warcraftcn.com/r/{name}.json",
     "@react-bits": "https://reactbits.dev/r/{name}.json"
   }
 }

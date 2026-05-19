@@ -1,51 +1,53 @@
 "use client";
 
 import * as React from "react";
-import * as TooltipPrimitive from "@radix-ui/react-tooltip";
+import { Tooltip as TooltipPrimitive } from "@base-ui/react/tooltip";
 import { cva, type VariantProps } from "class-variance-authority";
 
 import { cn } from "@/lib/utils";
 
-import "@/components/ui/warcraftcn/styles/warcraft.css";
+import "@/components/ui/warcraftcn/styles/scp.css";
 
-type TooltipVariant = "default" | "uncommon" | "rare" | "epic" | "legendary";
+type TooltipVariant = "safe" | "euclid" | "keter" | "thaumiel" | "apollyon";
 
-const TooltipVariantContext = React.createContext<TooltipVariant>("default");
+const TooltipVariantContext = React.createContext<TooltipVariant>("safe");
 
 const tooltipContentVariants = cva(
-  "fantasy z-50 w-fit max-w-xs rounded px-4 py-3 text-sm text-amber-100 wc-tooltip-base",
+  "institutional z-50 w-fit max-w-xs rounded px-4 py-3 text-sm text-gray-200 scp-tooltip-base",
   {
     variants: {
       variant: {
-        default: "wc-tooltip",
-        uncommon: "wc-tooltip-uncommon",
-        rare: "wc-tooltip-rare",
-        epic: "wc-tooltip-epic",
-        legendary: "wc-tooltip-legendary",
+        safe: "scp-tooltip-safe",
+        euclid: "scp-tooltip-euclid",
+        keter: "scp-tooltip-keter",
+        thaumiel: "scp-tooltip-thaumiel",
+        apollyon: "scp-tooltip-apollyon",
       },
     },
     defaultVariants: {
-      variant: "default",
+      variant: "safe",
     },
   }
 );
 
 const TOOLTIP_TITLE_COLORS: Record<TooltipVariant, string> = {
-  default: "text-amber-400",
-  uncommon: "text-green-400",
-  rare: "text-blue-400",
-  epic: "text-purple-400",
-  legendary: "text-orange-400",
+  safe: "text-green-400",
+  euclid: "text-yellow-400",
+  keter: "text-red-400",
+  thaumiel: "text-purple-400",
+  apollyon: "text-red-900",
 };
 
 function TooltipProvider({
   delayDuration = 0,
   ...props
-}: React.ComponentProps<typeof TooltipPrimitive.Provider>) {
+}: Omit<React.ComponentProps<typeof TooltipPrimitive.Provider>, "delay"> & {
+  delayDuration?: number;
+}) {
   return (
     <TooltipPrimitive.Provider
       data-slot="tooltip-provider"
-      delayDuration={delayDuration}
+      delay={delayDuration}
       {...props}
     />
   );
@@ -62,38 +64,61 @@ function Tooltip({
 }
 
 function TooltipTrigger({
+  asChild = false,
+  children,
   ...props
-}: React.ComponentProps<typeof TooltipPrimitive.Trigger>) {
+}: React.ComponentProps<typeof TooltipPrimitive.Trigger> & {
+  asChild?: boolean;
+}) {
+  if (asChild && React.isValidElement(children)) {
+    return (
+      <TooltipPrimitive.Trigger
+        data-slot="tooltip-trigger"
+        render={children as React.ReactElement}
+        {...props}
+      />
+    );
+  }
+
   return (
-    <TooltipPrimitive.Trigger data-slot="tooltip-trigger" {...props} />
+    <TooltipPrimitive.Trigger data-slot="tooltip-trigger" {...props}>
+      {children}
+    </TooltipPrimitive.Trigger>
   );
 }
 
 function TooltipContent({
   className,
-  variant = "default",
+  variant = "safe",
   sideOffset = 8,
+  side,
+  align,
   children,
   ...props
-}: React.ComponentProps<typeof TooltipPrimitive.Content> &
-  VariantProps<typeof tooltipContentVariants>) {
+}: React.ComponentProps<typeof TooltipPrimitive.Popup> &
+  VariantProps<typeof tooltipContentVariants> & {
+    sideOffset?: number;
+    side?: React.ComponentProps<typeof TooltipPrimitive.Positioner>["side"];
+    align?: React.ComponentProps<typeof TooltipPrimitive.Positioner>["align"];
+  }) {
   return (
     <TooltipPrimitive.Portal>
-      <TooltipPrimitive.Content
-        data-slot="tooltip-content"
-        sideOffset={sideOffset}
-        className={cn(
-          tooltipContentVariants({ variant }),
-          "animate-in fade-in-0 zoom-in-95 data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=closed]:zoom-out-95",
-          "data-[side=bottom]:slide-in-from-top-2 data-[side=left]:slide-in-from-right-2 data-[side=right]:slide-in-from-left-2 data-[side=top]:slide-in-from-bottom-2",
-          className
-        )}
-        {...props}
-      >
-        <TooltipVariantContext.Provider value={variant ?? "default"}>
-          {children}
-        </TooltipVariantContext.Provider>
-      </TooltipPrimitive.Content>
+      <TooltipPrimitive.Positioner sideOffset={sideOffset} side={side} align={align}>
+        <TooltipPrimitive.Popup
+          data-slot="tooltip-content"
+          className={cn(
+            tooltipContentVariants({ variant }),
+            "animate-in fade-in-0 zoom-in-95 data-[closed]:animate-out data-[closed]:fade-out-0 data-[closed]:zoom-out-95",
+            "data-[side=bottom]:slide-in-from-top-2 data-[side=left]:slide-in-from-right-2 data-[side=right]:slide-in-from-left-2 data-[side=top]:slide-in-from-bottom-2",
+            className
+          )}
+          {...props}
+        >
+          <TooltipVariantContext.Provider value={variant ?? "safe"}>
+            {children}
+          </TooltipVariantContext.Provider>
+        </TooltipPrimitive.Popup>
+      </TooltipPrimitive.Positioner>
     </TooltipPrimitive.Portal>
   );
 }
@@ -120,7 +145,7 @@ function TooltipBody({
   return (
     <p
       data-slot="tooltip-body"
-      className={cn("mt-1 text-xs text-amber-100/80", className)}
+      className={cn("mt-1 text-xs text-gray-300/80", className)}
       {...props}
     />
   );

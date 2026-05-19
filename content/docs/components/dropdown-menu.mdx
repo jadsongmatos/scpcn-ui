@@ -1,75 +1,75 @@
 ---
 title: Dropdown Menu
-description: A Warcraft III styled dropdown menu with fantasy frames.
+description: An SCP Foundation styled dropdown menu with institutional frames.
 ---
 
 import { Button } from "@/components/ui/warcraftcn/button";
 import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuLabel,
-  DropdownMenuSeparator,
-  DropdownMenuTrigger,
-  DropdownMenuCheckboxItem,
-  DropdownMenuRadioGroup,
-  DropdownMenuRadioItem,
+DropdownMenu,
+DropdownMenuContent,
+DropdownMenuItem,
+DropdownMenuLabel,
+DropdownMenuSeparator,
+DropdownMenuTrigger,
+DropdownMenuCheckboxItem,
+DropdownMenuRadioGroup,
+DropdownMenuRadioItem,
 } from "@/components/ui/warcraftcn/dropdown-menu";
-import { ChevronDown, Sword, Shield, Wand2, Heart } from "lucide-react";
+import { ChevronDown, Shield, Eye, FlaskConical, AlertTriangle } from "lucide-react";
 
 ## Standard
 
 <DropdownMenu>
-  <DropdownMenuTrigger asChild>
-    <Button className="flex gap-2 w-64 md:w-96">Select Class</Button>
-  </DropdownMenuTrigger>
-  <DropdownMenuContent className="w-64 md:w-96">
-    <DropdownMenuLabel>Choose Your Path</DropdownMenuLabel>
-    <DropdownMenuSeparator />
-    <DropdownMenuItem className="flex gap-2">
-      <Sword className="size-4" /> <div>Warrior</div>
-    </DropdownMenuItem>
-    <DropdownMenuItem className="flex gap-2">
-      <Shield className="size-4" /> <div>Paladin</div>
-    </DropdownMenuItem>
-    <DropdownMenuItem className="flex gap-2">
-      <Wand2 className="size-4" /> <div>Mage</div>
-    </DropdownMenuItem>
-    <DropdownMenuItem className="flex gap-2">
-      <Heart className="size-4" /> <div>Priest</div>
-    </DropdownMenuItem>
-  </DropdownMenuContent>
+<DropdownMenuTrigger asChild>
+<Button className="flex gap-2 w-64 md:w-96">Select Clearance Level</Button>
+</DropdownMenuTrigger>
+<DropdownMenuContent className="w-64 md:w-96">
+<DropdownMenuLabel>Choose Your Assignment</DropdownMenuLabel>
+<DropdownMenuSeparator />
+<DropdownMenuItem className="flex gap-2">
+<Shield className="size-4" /> <div>Security</div>
+</DropdownMenuItem>
+<DropdownMenuItem className="flex gap-2">
+<Eye className="size-4" /> <div>Intelligence</div>
+</DropdownMenuItem>
+<DropdownMenuItem className="flex gap-2">
+<FlaskConical className="size-4" /> <div>Research</div>
+</DropdownMenuItem>
+<DropdownMenuItem className="flex gap-2">
+<AlertTriangle className="size-4" /> <div>Containment</div>
+</DropdownMenuItem>
+</DropdownMenuContent>
 </DropdownMenu>
 
 ## Installation
 
 ```bash
-pnpm dlx shadcn@latest add https://warcraftcn.com/r/dropdown-menu.json
+pnpm dlx shadcn@latest add https://scpcn.com/r/dropdown-menu.json
 ```
 
 ## Usage
 
 ```tsx
 import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuLabel,
-  DropdownMenuSeparator,
-  DropdownMenuTrigger,
+DropdownMenu,
+DropdownMenuContent,
+DropdownMenuItem,
+DropdownMenuLabel,
+DropdownMenuSeparator,
+DropdownMenuTrigger,
 } from "@/components/ui/warcraftcn/dropdown-menu";
 import { Button } from "@/components/ui/warcraftcn/button";
 
 <DropdownMenu>
-  <DropdownMenuTrigger asChild>
-    <Button>Open Menu</Button>
-  </DropdownMenuTrigger>
-  <DropdownMenuContent>
-    <DropdownMenuLabel>Actions</DropdownMenuLabel>
-    <DropdownMenuSeparator />
-    <DropdownMenuItem>Profile</DropdownMenuItem>
-    <DropdownMenuItem>Settings</DropdownMenuItem>
-    <DropdownMenuItem>Logout</DropdownMenuItem>
-  </DropdownMenuContent>
+<DropdownMenuTrigger asChild>
+<Button>Open Menu</Button>
+</DropdownMenuTrigger>
+<DropdownMenuContent>
+<DropdownMenuLabel>Actions</DropdownMenuLabel>
+<DropdownMenuSeparator />
+<DropdownMenuItem>Profile</DropdownMenuItem>
+<DropdownMenuItem>Settings</DropdownMenuItem>
+<DropdownMenuItem>Logout</DropdownMenuItem>
+</DropdownMenuContent>
 </DropdownMenu>;
 ```

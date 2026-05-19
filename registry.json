@@ -1,13 +1,13 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry.json",
-  "name": "warcraftcn",
+  "name": "scpcn",
   "homepage": "https://warcraftcn.com",
   "items": [
     {
       "name": "button",
       "type": "registry:component",
-      "title": "Warcraft Button",
-      "description": "A Warcraft-themed button component with fantasy styling",
+      "title": "SCP Button",
+      "description": "An SCP Foundation-themed button component with clinical styling",
       "registryDependencies": [],
       "files": [
         {
@@ -45,8 +45,8 @@
     {
       "name": "input",
       "type": "registry:component",
-      "title": "Warcraft Input",
-      "description": "A Warcraft-themed input component with fantasy styling",
+      "title": "SCP Input",
+      "description": "An SCP Foundation-themed input component with clinical styling",
       "registryDependencies": [],
       "files": [
         {
@@ -69,8 +69,8 @@
     {
       "name": "card",
       "type": "registry:component",
-      "title": "Warcraft Card",
-      "description": "A Warcraft-themed card component with fantasy styling",
+      "title": "SCP Card",
+      "description": "An SCP Foundation-themed card component with clinical styling",
       "registryDependencies": [],
       "files": [
         {
@@ -93,8 +93,8 @@
     {
       "name": "skeleton",
       "type": "registry:component",
-      "title": "Warcraft Skeleton",
-      "description": "A Warcraft-themed skeleton/loading placeholder with faction themes (orc, elf, human, undead) and shimmer animation",
+      "title": "SCP Skeleton",
+      "description": "An SCP Foundation-themed skeleton/loading placeholder with classification themes and shimmer animation",
       "registryDependencies": [],
       "files": [
         {
@@ -112,8 +112,8 @@
     {
       "name": "spinner",
       "type": "registry:component",
-      "title": "Warcraft Spinner",
-      "description": "A Warcraft-themed loading spinner based on acolyte summoning/mining glyph with animated runes and fade pulses",
+      "title": "SCP Spinner",
+      "description": "An SCP Foundation-themed loading spinner with animated containment glyphs and fade pulses",
       "registryDependencies": [],
       "files": [
         {
@@ -136,8 +136,8 @@
     {
       "name": "badge",
       "type": "registry:component",
-      "title": "Warcraft Badge",
-      "description": "A Warcraft-themed badge component with fantasy styling",
+      "title": "SCP Badge",
+      "description": "An SCP Foundation-themed badge component with clinical styling",
       "registryDependencies": [],
       "files": [
         {
@@ -165,8 +165,8 @@
     {
       "name": "dropdown-menu",
       "type": "registry:component",
-      "title": "Warcraft Dropdown Menu",
-      "description": "A Warcraft-themed dropdown menu component with fantasy styling and border-image frames",
+      "title": "SCP Dropdown Menu",
+      "description": "An SCP Foundation-themed dropdown menu component with clinical styling and border-image frames",
       "dependencies": ["radix-ui", "lucide-react"],
       "registryDependencies": [],
       "files": [
@@ -190,8 +190,8 @@
     {
       "name": "textarea",
       "type": "registry:component",
-      "title": "Warcraft Textarea",
-      "description": "A Warcraft-themed textarea component with fantasy styling",
+      "title": "SCP Textarea",
+      "description": "An SCP Foundation-themed textarea component with clinical styling",
       "registryDependencies": [],
       "files": [
         {
@@ -214,8 +214,8 @@
     {
       "name": "avatar",
       "type": "registry:component",
-      "title": "Warcraft Avatar",
-      "description": "A Warcraft-themed avatar component with fantasy styling",
+      "title": "SCP Avatar",
+      "description": "An SCP Foundation-themed avatar component with clinical styling",
       "registryDependencies": [],
       "files": [
         {
@@ -258,8 +258,8 @@
     {
       "name": "tooltip",
       "type": "registry:component",
-      "title": "Warcraft Tooltip",
-      "description": "A Warcraft-themed tooltip component with item-quality rarity variants (default, uncommon, rare, epic, legendary) and side positioning support",
+      "title": "SCP Tooltip",
+      "description": "An SCP Foundation-themed tooltip component with classification-level variants (default, safe, euclid, keter, thaumiel) and side positioning support",
       "dependencies": ["radix-ui"],
       "registryDependencies": [],
       "files": [
@@ -278,8 +278,8 @@
     {
       "name": "cursor",
       "type": "registry:component",
-      "title": "Warcraft Cursor",
-      "description": "A Warcraft-themed cursor component with faction-specific cursor styles",
+      "title": "SCP Cursor",
+      "description": "An SCP Foundation-themed cursor component with classification-specific cursor styles",
       "registryDependencies": [],
       "files": [
         {
@@ -317,8 +317,8 @@
     {
       "name": "label",
       "type": "registry:component",
-      "title": "Warcraft Label",
-      "description": "A Warcraft-themed label component for form inputs with required indicator and disabled state support",
+      "title": "SCP Label",
+      "description": "An SCP Foundation-themed label component for form inputs with required indicator and disabled state support",
       "dependencies": ["@radix-ui/react-label"],
       "registryDependencies": [],
       "files": [
@@ -337,8 +337,8 @@
     {
       "name": "pagination",
       "type": "registry:component",
-      "title": "Warcraft Pagination",
-      "description": "A Warcraft-themed pagination component with fantasy button styling and runes.",
+      "title": "SCP Pagination",
+      "description": "An SCP Foundation-themed pagination component with clinical button styling and containment glyphs.",
       "dependencies": ["lucide-react"],
       "registryDependencies": ["button"],
       "files": [
@@ -352,8 +352,8 @@
     {
       "name": "checkbox",
       "type": "registry:component",
-      "title": "Warcraft Checkbox",
-      "description": "A Warcraft-themed checkbox component with faction-specific fantasy styling",
+      "title": "SCP Checkbox",
+      "description": "An SCP Foundation-themed checkbox component with classification-specific styling",
       "dependencies": ["radix-ui"],
       "registryDependencies": [],
       "files": [
@@ -422,8 +422,8 @@
     {
       "name": "radio-group",
       "type": "registry:component",
-      "title": "Warcraft Radio Group",
-      "description": "A Warcraft-themed radio group component with gem socket styling and gold glow indicators",
+      "title": "SCP Radio Group",
+      "description": "An SCP Foundation-themed radio group component with containment cell styling and red glow indicators",
       "dependencies": ["radix-ui"],
       "registryDependencies": [],
       "files": [
@@ -442,8 +442,8 @@
     {
       "name": "accordion",
       "type": "registry:component",
-      "title": "Warcraft Accordion",
-      "description": "A Warcraft styled accordion component",
+      "title": "SCP Accordion",
+      "description": "An SCP Foundation styled accordion component",
       "dependencies": ["radix-ui"],
       "registryDependencies": [],
       "files": [

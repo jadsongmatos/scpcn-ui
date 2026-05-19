@@ -1,50 +1,50 @@
 ---
 title: Checkbox
-description: Custom Warcraft-style checkbox component with faction themes.
+description: Custom SCP Foundation-style checkbox component with classification themes.
 ---
 
 import { Checkbox } from "@/components/ui/warcraftcn/checkbox";
 
 ## Default
 
-<Checkbox defaultChecked faction="default" id="doc-default">
-  Accept terms and conditions
+<Checkbox defaultChecked classification="safe" id="doc-default">
+Accept terms and conditions
 </Checkbox>
 
-## Human Faction
+## Thaumiel Classification
 
-<Checkbox defaultChecked faction="human" id="doc-human">
-  Accept terms and conditions
+<Checkbox defaultChecked classification="thaumiel" id="doc-thaumiel">
+Accept terms and conditions
 </Checkbox>
 
-## Orc Faction
+## Keter Classification
 
-<Checkbox defaultChecked faction="orc" id="doc-orc">
-  Accept terms and conditions
+<Checkbox defaultChecked classification="keter" id="doc-keter">
+Accept terms and conditions
 </Checkbox>
 
-## Elf Faction
+## Euclid Classification
 
-<Checkbox defaultChecked faction="elf" id="doc-elf">
-  Accept terms and conditions
+<Checkbox defaultChecked classification="euclid" id="doc-euclid">
+Accept terms and conditions
 </Checkbox>
 
-## Undead Faction
+## Apollyon Classification
 
-<Checkbox defaultChecked faction="undead" id="doc-undead">
-  Accept terms and conditions
+<Checkbox defaultChecked classification="apollyon" id="doc-apollyon">
+Accept terms and conditions
 </Checkbox>
 
 ## Disabled
 
-<Checkbox defaultChecked faction="default" disabled id="doc-disabled">
-  Locked setting
+<Checkbox defaultChecked classification="safe" disabled id="doc-disabled">
+Locked setting
 </Checkbox>
 
 ## Installation
 
 ```bash
-pnpm dlx shadcn@latest add https://warcraftcn.com/r/checkbox.json
+pnpm dlx shadcn@latest add https://scpcn.com/r/checkbox.json
 ```
 
 ## Usage
@@ -54,24 +54,24 @@ import { Checkbox } from "@/components/ui/warcraftcn/checkbox";
 ```
 
 ```tsx
-<Checkbox faction="default" id="terms">
-  Accept terms and conditions
+<Checkbox classification="safe" id="terms">
+Accept terms and conditions
 </Checkbox>
 ```
 
-### Faction Variants
+### Classification Variants
 
 ```tsx
-<Checkbox faction="human">Human theme</Checkbox>
-<Checkbox faction="orc">Orc theme</Checkbox>
-<Checkbox faction="elf">Elf theme</Checkbox>
-<Checkbox faction="undead">Undead theme</Checkbox>
+<Checkbox classification="thaumiel">Thaumiel theme</Checkbox>
+<Checkbox classification="keter">Keter theme</Checkbox>
+<Checkbox classification="euclid">Euclid theme</Checkbox>
+<Checkbox classification="apollyon">Apollyon theme</Checkbox>
 ```
 
 ### Disabled State
 
 ```tsx
-<Checkbox faction="default" disabled>
-  Locked setting
+<Checkbox classification="safe" disabled>
+Locked setting
 </Checkbox>
 ```

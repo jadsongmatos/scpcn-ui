@@ -1,6 +1,6 @@
 # Contributing
 
-Thanks for your interest in contributing to warcraftcn. We're happy to have you here.
+Thanks for your interest in contributing to scpcn. We're happy to have you here.
 
 Please take a moment to review this document before submitting your first pull request. We also strongly recommend that you check for open issues and pull requests to see if someone else is working on something similar.
 
@@ -27,13 +27,13 @@ You can fork this repo by clicking the fork button in the top right corner of th
 ### Clone on your local machine
 
 ```bash
-git clone https://github.com/your-username/warcraftcn.git
+git clone https://github.com/your-username/scpcn.git
 ```
 
 ### Navigate to project directory
 
 ```bash
-cd warcraftcn
+cd scpcn
 ```
 
 ### Create a new Branch
@@ -50,7 +50,7 @@ pnpm i
 
 #### Examples
 
-1. To run the `warcraftcn.com` website:
+1. To run the `scpcn` website:
 
 ```bash
 pnpm dev

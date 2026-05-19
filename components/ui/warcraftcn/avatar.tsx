@@ -2,16 +2,16 @@ import * as React from "react";
 import { cva, type VariantProps } from "class-variance-authority";
 import { cn } from "@/lib/utils";
 
-import "@/components/ui/warcraftcn/styles/warcraft.css";
+import "@/components/ui/warcraftcn/styles/scp.css";
 
-const avatarVariants = cva("fantasy relative", {
+const avatarVariants = cva("institutional relative", {
   variants: {
-    faction: {
-      default: "wc-avatar-default",
-      orc: "wc-avatar-orc",
-      elf: "wc-avatar-elf",
-      human: "wc-avatar-human",
-      undead: "wc-avatar-undead",
+    classification: {
+      safe: "scp-avatar-safe",
+      keter: "scp-avatar-keter",
+      thaumiel: "scp-avatar-thaumiel",
+      euclid: "scp-avatar-euclid",
+      apollyon: "scp-avatar-apollyon",
     },
     size: {
       sm: "w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 lg:w-32 lg:h-32 xl:w-36 xl:h-36",
@@ -20,7 +20,7 @@ const avatarVariants = cva("fantasy relative", {
     },
   },
   defaultVariants: {
-    faction: "default",
+    classification: "safe",
     size: "md",
   },
 });
@@ -31,7 +31,7 @@ export interface AvatarProps
   src?: string; // Avatar image URL
   alt?: string; // Alt text
   fallback?: React.ReactNode; // Fallback if no image
-  faction?: "default" | "orc" | "elf" | "human" | "undead";
+  classification?: "safe" | "euclid" | "keter" | "thaumiel" | "apollyon";
   size?: "sm" | "md" | "lg";
 }
 
@@ -40,11 +40,11 @@ export const Avatar: React.FC<AvatarProps> = ({
   src,
   alt = "",
   fallback,
-  faction = "default",
+  classification = "safe",
   size = "md",
   ...props
 }) => {
-  const frameClasses = avatarVariants({ faction, size });
+  const frameClasses = avatarVariants({ classification, size });
 
   return (
     <div className={cn(frameClasses, className)} {...props}>
@@ -63,7 +63,7 @@ export const Avatar: React.FC<AvatarProps> = ({
         ) : null}
       </div>
 
-      <div className="pointer-events-none absolute inset-0 scale-[1.05] wc-avatar-frame" />
+      <div className="pointer-events-none absolute inset-0 scale-[1.05] scp-avatar-frame" />
     </div>
   );
 };

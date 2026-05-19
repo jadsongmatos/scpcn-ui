@@ -1,63 +1,63 @@
 ---
 title: Card
-description: A Warcraft III styled card component with parchment textures and gothic frames.
+description: An SCP Foundation styled card component with institutional textures and containment frames.
 ---
 
 import {
-  Card,
-  CardHeader,
-  CardTitle,
-  CardDescription,
-  CardContent,
-  CardFooter,
-  CardAction,
+Card,
+CardHeader,
+CardTitle,
+CardDescription,
+CardContent,
+CardFooter,
+CardAction,
 } from "@/components/ui/warcraftcn/card";
 import { Button } from "@/components/ui/warcraftcn/button";
 
 ## Standard
 
 <Card className="max-w-lg min-h-[40rem]">
-  <CardHeader>
-    <CardTitle>Arthas Menethil</CardTitle>
-    <CardDescription>Prince of Lordaeron</CardDescription>
-  </CardHeader>
-  <CardContent className="text-white">
-    The former Crown Prince of Lordaeron, who became the Lich King after taking
-    up the cursed blade Frostmourne.
-  </CardContent>
-  <CardFooter className="flex items-center justify-center">
-    <Button size="sm">View Profile</Button>
-  </CardFooter>
+<CardHeader>
+<CardTitle>Dr. Clef</CardTitle>
+<CardDescription>Senior Researcher, Site-19</CardDescription>
+</CardHeader>
+<CardContent className="text-white">
+A prominent Foundation researcher known for involvement in multiple high-profile
+containment operations and the classification of numerous Keter-class entities.
+</CardContent>
+<CardFooter className="flex items-center justify-center">
+<Button size="sm">View Profile</Button>
+</CardFooter>
 </Card>
 
 ## Installation
 
 ```bash
-pnpm dlx shadcn@latest add https://warcraftcn.com/r/card.json
+pnpm dlx shadcn@latest add https://scpcn.com/r/card.json
 ```
 
 ## Usage
 
 ```tsx
 import {
-  Card,
-  CardHeader,
-  CardTitle,
-  CardDescription,
-  CardContent,
-  CardFooter,
+Card,
+CardHeader,
+CardTitle,
+CardDescription,
+CardContent,
+CardFooter,
 } from "@/components/ui/warcraftcn/card";
 
 <Card>
-  <CardHeader>
-    <CardTitle>Card Title</CardTitle>
-    <CardDescription>Card description</CardDescription>
-  </CardHeader>
-  <CardContent>
-    <p>Card content goes here.</p>
-  </CardContent>
-  <CardFooter>
-    <p>Card footer</p>
-  </CardFooter>
+<CardHeader>
+<CardTitle>Card Title</CardTitle>
+<CardDescription>Card description</CardDescription>
+</CardHeader>
+<CardContent>
+<p>Card content goes here.</p>
+</CardContent>
+<CardFooter>
+<p>Card footer</p>
+</CardFooter>
 </Card>;
 ```

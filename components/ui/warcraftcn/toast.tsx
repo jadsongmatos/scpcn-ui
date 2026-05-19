@@ -10,28 +10,28 @@ import {
   Info,
 } from "lucide-react";
 
-import "@/components/ui/warcraftcn/styles/warcraft.css";
+import "@/components/ui/warcraftcn/styles/scp.css";
 
 const SCROLL_THEMES = {
-  default: {
-    handleClass: "scroll-handle-default",
-    centerBgClass: "scroll-center-default",
+  safe: {
+    handleClass: "scroll-handle-safe",
+    centerBgClass: "scroll-center-safe",
   },
-  human: {
-    handleClass: "scroll-handle-human",
-    centerBgClass: "scroll-center-human",
+  euclid: {
+    handleClass: "scroll-handle-euclid",
+    centerBgClass: "scroll-center-euclid",
   },
-  undead: {
-    handleClass: "scroll-handle-undead",
-    centerBgClass: "scroll-center-undead",
+  keter: {
+    handleClass: "scroll-handle-keter",
+    centerBgClass: "scroll-center-keter",
   },
-  orc: {
-    handleClass: "scroll-handle-orc",
-    centerBgClass: "scroll-center-orc",
+  thaumiel: {
+    handleClass: "scroll-handle-thaumiel",
+    centerBgClass: "scroll-center-thaumiel",
   },
-  elf: {
-    handleClass: "scroll-handle-elf",
-    centerBgClass: "scroll-center-elf",
+  apollyon: {
+    handleClass: "scroll-handle-apollyon",
+    centerBgClass: "scroll-center-apollyon",
   },
 } as const;
 
@@ -84,7 +84,7 @@ const VARIANT_ICON = {
   info: Info,
 } as const;
 
-type ScrollFaction = keyof typeof SCROLL_THEMES;
+type ScrollClassification = keyof typeof SCROLL_THEMES;
 type ToastVariant = "default" | "success" | "error" | "warning" | "info";
 type ToastPosition =
   | "top-left"
@@ -103,7 +103,7 @@ interface ScrollToastProps {
   actionLabel?: string;
   onAction?: () => void;
   dismissible?: boolean;
-  faction?: ScrollFaction;
+  classification?: ScrollClassification;
   variant?: ToastVariant;
 }
 
@@ -111,15 +111,14 @@ const ScrollToast: React.FC<ScrollToastProps> = ({
   id,
   message,
   durationMs,
-  faction = "default",
+  classification = "safe",
   variant = "default",
 }) => {
   const [phase, setPhase] = useState(0);
 
-  // Memoize theme lookup for consistency/perf
   const theme = useMemo(
-    () => SCROLL_THEMES[faction] ?? SCROLL_THEMES.default,
-    [faction]
+    () => SCROLL_THEMES[classification] ?? SCROLL_THEMES.safe,
+    [classification]
   );
   // Memoize icon for this variant
   const Icon = useMemo(() => {
@@ -176,7 +175,7 @@ const ScrollToast: React.FC<ScrollToastProps> = ({
                   aria-hidden="true"
                 />
               )}
-              <span className="text-xs truncate leading-snug fantasy align-middle">
+              <span className="text-xs truncate leading-snug institutional align-middle">
                 {message}
               </span>
             </div>
@@ -200,7 +199,7 @@ type TriggerOptions = {
   actionLabel?: string;
   onAction?: () => void;
   dismissible?: boolean;
-  faction?: ScrollFaction;
+  classification?: ScrollClassification;
   position?: ToastPosition;
   variant?: ToastVariant;
 };
@@ -208,7 +207,7 @@ type TriggerOptions = {
 const triggerScrollToast = ({
   message = "",
   durationMs = 5000,
-  faction,
+  classification,
   position = "top-center",
   variant = "default",
 }: TriggerOptions = {}) => {
@@ -218,7 +217,7 @@ const triggerScrollToast = ({
         id={String(id)}
         message={message}
         durationMs={durationMs}
-        faction={faction}
+        classification={classification}
         variant={variant}
       />
     ),

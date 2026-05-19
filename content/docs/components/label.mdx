@@ -1,6 +1,6 @@
 ---
 title: Label
-description: A Warcraft III styled label component for form inputs.
+description: An SCP Foundation styled label component for form inputs.
 ---
 
 import { Label } from "@/components/ui/warcraftcn/label";
@@ -9,35 +9,35 @@ import { Input } from "@/components/ui/warcraftcn/input";
 ## Standard
 
 <div className="flex flex-col gap-2">
-  <Label htmlFor="character">Character Name</Label>
-  <Input id="character" className="w-96" placeholder="Enter your character name..." />
+<Label htmlFor="designation">Entity Designation</Label>
+<Input id="designation" className="w-96" placeholder="Enter entity designation..." />
 </div>
 
 ## Required
 
 <div className="flex flex-col gap-2">
-  <Label htmlFor="realm" required>Realm</Label>
-  <Input id="realm" className="w-96" placeholder="Select your realm..." />
+<Label htmlFor="site" required>Site</Label>
+<Input id="site" className="w-96" placeholder="Select your site..." />
 </div>
 
 ## Disabled
 
 <div className="flex flex-col gap-2">
-  <Label htmlFor="locked" disabled>Locked Field</Label>
-  <Input id="locked" className="w-96" placeholder="This field is locked" disabled />
+<Label htmlFor="locked" disabled>Locked Field</Label>
+<Input id="locked" className="w-96" placeholder="This field is locked" disabled />
 </div>
 
 ## Muted
 
 <div className="flex flex-col gap-2">
-  <Label htmlFor="optional" variant="muted">Optional Note</Label>
-  <Input id="optional" className="w-96" placeholder="Additional notes..." />
+<Label htmlFor="optional" variant="muted">Optional Note</Label>
+<Input id="optional" className="w-96" placeholder="Additional notes..." />
 </div>
 
 ## Installation
 
 ```bash
-pnpm dlx shadcn@latest add https://warcraftcn.com/r/label.json
+pnpm dlx shadcn@latest add https://scpcn.com/r/label.json
 ```
 
 ## Usage
@@ -51,7 +51,7 @@ import { Label } from "@/components/ui/warcraftcn/label";
 ### With Required Indicator
 
 ```tsx
-<Label htmlFor="name" required>Character Name</Label>
+<Label htmlFor="name" required>Entity Designation</Label>
 ```
 
 ### Disabled State

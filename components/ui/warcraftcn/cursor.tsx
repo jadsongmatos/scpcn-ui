@@ -2,38 +2,38 @@ import * as React from "react";
 import { cva, type VariantProps } from "class-variance-authority";
 import { cn } from "@/lib/utils";
 
-import "@/components/ui/warcraftcn/styles/warcraft.css";
+import "@/components/ui/warcraftcn/styles/scp.css";
 
 const cursorVariants = cva("", {
   variants: {
-    faction: {
-      default: "",
-      orc: "wc-orc-cursor",
-      elf: "wc-elf-cursor",
-      human: "wc-human-cursor",
-      undead: "wc-undead-cursor",
+    classification: {
+      safe: "",
+      keter: "scp-keter-cursor",
+      thaumiel: "scp-thaumiel-cursor",
+      euclid: "scp-euclid-cursor",
+      apollyon: "scp-apollyon-cursor",
     },
   },
   defaultVariants: {
-    faction: "default"
+    classification: "safe"
   },
 });
 
 export interface CursorProps extends React.ComponentProps<"div">, VariantProps<typeof cursorVariants> {
-  faction?: "default" | "orc" | "elf" | "human" | "undead";
+  classification?: "safe" | "keter" | "thaumiel" | "euclid" | "apollyon";
 }
 
 export const Cursor: React.FC<CursorProps> = ({
   className,
-  faction = "default",
+  classification = "safe",
   children,
   ...props
 }) => {
-  const cursorClass = cursorVariants({ faction });
+  const cursorClass = cursorVariants({ classification });
 
   return (
     <div
-      className={cn("wc-cursor", cursorClass, className)}
+      className={cn("scp-cursor", cursorClass, className)}
       {...props}
     >
       {children}

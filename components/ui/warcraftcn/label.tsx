@@ -1,21 +1,21 @@
 "use client";
 
 import * as React from "react";
-import * as LabelPrimitive from "@radix-ui/react-label";
+import { Field } from "@base-ui/react/field";
 import { cva, type VariantProps } from "class-variance-authority";
 
 import { cn } from "@/lib/utils";
 
-import "@/components/ui/warcraftcn/styles/warcraft.css";
+import "@/components/ui/warcraftcn/styles/scp.css";
 
 const labelVariants = cva(
-  "fantasy text-sm font-medium leading-none select-none",
+  "institutional text-sm font-medium leading-none select-none",
   {
     variants: {
       variant: {
         default:
-          "text-amber-200 [text-shadow:0_0_6px_rgba(251,191,36,0.25)]",
-        muted: "text-amber-200/60",
+          "text-gray-300 [text-shadow:0_0_6px_rgba(204,51,51,0.25)]",
+        muted: "text-gray-300/60",
       },
     },
     defaultVariants: {
@@ -24,7 +24,7 @@ const labelVariants = cva(
   }
 );
 
-type LabelProps = React.ComponentProps<typeof LabelPrimitive.Root> &
+type LabelProps = React.ComponentProps<typeof Field.Label> &
   VariantProps<typeof labelVariants> & {
     required?: boolean;
     disabled?: boolean;
@@ -39,7 +39,7 @@ function Label({
   ...props
 }: LabelProps) {
   return (
-    <LabelPrimitive.Root
+    <Field.Label
       data-slot="label"
       data-disabled={disabled || undefined}
       className={cn(
@@ -61,7 +61,7 @@ function Label({
           <span className="sr-only">(required)</span>
         </>
       )}
-    </LabelPrimitive.Root>
+    </Field.Label>
   );
 }
 

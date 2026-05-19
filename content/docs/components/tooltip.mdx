@@ -1,25 +1,25 @@
 ---
 title: Tooltip
-description: A popup that displays Warcraft-styled information when the element receives keyboard focus or the mouse hovers over it.
+description: A popup that displays SCP Foundation-styled information when the element receives keyboard focus or the mouse hovers over it.
 ---
 
 import { Button } from "@/components/ui/warcraftcn/button";
 import {
-  Tooltip,
-  TooltipBody,
-  TooltipContent,
-  TooltipTitle,
-  TooltipTrigger,
+Tooltip,
+TooltipBody,
+TooltipContent,
+TooltipTitle,
+TooltipTrigger,
 } from "@/components/ui/warcraftcn/tooltip";
 
 <Tooltip>
-  <TooltipTrigger asChild>
-    <Button className="w-64 md:w-96">Hover</Button>
-  </TooltipTrigger>
-  <TooltipContent>
-    <TooltipTitle>Hearthstone</TooltipTitle>
-    <TooltipBody>Binds when picked up</TooltipBody>
-  </TooltipContent>
+<TooltipTrigger asChild>
+<Button className="w-64 md:w-96">Hover</Button>
+</TooltipTrigger>
+<TooltipContent>
+<TooltipTitle>SCP-500</TooltipTitle>
+<TooltipBody>Object Class: Safe</TooltipBody>
+</TooltipContent>
 </Tooltip>
 
 ## Examples
@@ -27,100 +27,100 @@ import {
 ### Default
 
 <Tooltip>
-  <TooltipTrigger asChild>
-    <Button className="w-64 md:w-96">Default</Button>
-  </TooltipTrigger>
-  <TooltipContent>
-    <TooltipTitle>Hearthstone</TooltipTitle>
-    <TooltipBody>Binds when picked up</TooltipBody>
-  </TooltipContent>
+<TooltipTrigger asChild>
+<Button className="w-64 md:w-96">Default</Button>
+</TooltipTrigger>
+<TooltipContent>
+<TooltipTitle>SCP-500</TooltipTitle>
+<TooltipBody>Object Class: Safe</TooltipBody>
+</TooltipContent>
 </Tooltip>
 
 ```tsx
 <Tooltip>
-  <TooltipTrigger asChild>
-    <Button>Default</Button>
-  </TooltipTrigger>
-  <TooltipContent>
-    <TooltipTitle>Hearthstone</TooltipTitle>
-    <TooltipBody>Binds when picked up</TooltipBody>
-  </TooltipContent>
+<TooltipTrigger asChild>
+<Button>Default</Button>
+</TooltipTrigger>
+<TooltipContent>
+<TooltipTitle>SCP-500</TooltipTitle>
+<TooltipBody>Object Class: Safe</TooltipBody>
+</TooltipContent>
 </Tooltip>
 ```
 
 ### Uncommon
 
 <Tooltip>
-  <TooltipTrigger asChild>
-    <Button className="w-64 md:w-96">Uncommon</Button>
-  </TooltipTrigger>
-  <TooltipContent variant="uncommon">
-    <TooltipTitle>Outrunner's Cloak</TooltipTitle>
-    <TooltipBody>Binds when equipped</TooltipBody>
-  </TooltipContent>
+<TooltipTrigger asChild>
+<Button className="w-64 md:w-96">Uncommon</Button>
+</TooltipTrigger>
+<TooltipContent variant="uncommon">
+<TooltipTitle>SCP-173</TooltipTitle>
+<TooltipBody>Object Class: Euclid</TooltipBody>
+</TooltipContent>
 </Tooltip>
 
 ```tsx
 <TooltipContent variant="uncommon">
-  <TooltipTitle>Outrunner's Cloak</TooltipTitle>
-  <TooltipBody>Binds when equipped</TooltipBody>
+<TooltipTitle>SCP-173</TooltipTitle>
+<TooltipBody>Object Class: Euclid</TooltipBody>
 </TooltipContent>
 ```
 
 ### Rare
 
 <Tooltip>
-  <TooltipTrigger asChild>
-    <Button className="w-64 md:w-96">Rare</Button>
-  </TooltipTrigger>
-  <TooltipContent variant="rare">
-    <TooltipTitle>Azuresong Mageblade</TooltipTitle>
-    <TooltipBody>Binds when picked up</TooltipBody>
-  </TooltipContent>
+<TooltipTrigger asChild>
+<Button className="w-64 md:w-96">Rare</Button>
+</TooltipTrigger>
+<TooltipContent variant="rare">
+<TooltipTitle>SCP-682</TooltipTitle>
+<TooltipBody>Object Class: Keter</TooltipBody>
+</TooltipContent>
 </Tooltip>
 
 ```tsx
 <TooltipContent variant="rare">
-  <TooltipTitle>Azuresong Mageblade</TooltipTitle>
-  <TooltipBody>Binds when picked up</TooltipBody>
+<TooltipTitle>SCP-682</TooltipTitle>
+<TooltipBody>Object Class: Keter</TooltipBody>
 </TooltipContent>
 ```
 
 ### Epic
 
 <Tooltip>
-  <TooltipTrigger asChild>
-    <Button className="w-64 md:w-96">Epic</Button>
-  </TooltipTrigger>
-  <TooltipContent variant="epic">
-    <TooltipTitle>Ashbringer</TooltipTitle>
-    <TooltipBody>Binds when picked up</TooltipBody>
-  </TooltipContent>
+<TooltipTrigger asChild>
+<Button className="w-64 md:w-96">Epic</Button>
+</TooltipTrigger>
+<TooltipContent variant="epic">
+<TooltipTitle>SCP-2000</TooltipTitle>
+<TooltipBody>Object Class: Thaumiel</TooltipBody>
+</TooltipContent>
 </Tooltip>
 
 ```tsx
 <TooltipContent variant="epic">
-  <TooltipTitle>Ashbringer</TooltipTitle>
-  <TooltipBody>Binds when picked up</TooltipBody>
+<TooltipTitle>SCP-2000</TooltipTitle>
+<TooltipBody>Object Class: Thaumiel</TooltipBody>
 </TooltipContent>
 ```
 
 ### Legendary
 
 <Tooltip>
-  <TooltipTrigger asChild>
-    <Button className="w-64 md:w-96">Legendary</Button>
-  </TooltipTrigger>
-  <TooltipContent variant="legendary">
-    <TooltipTitle>Thunderfury</TooltipTitle>
-    <TooltipBody>Binds when picked up</TooltipBody>
-  </TooltipContent>
+<TooltipTrigger asChild>
+<Button className="w-64 md:w-96">Legendary</Button>
+</TooltipTrigger>
+<TooltipContent variant="legendary">
+<TooltipTitle>SCP-001</TooltipTitle>
+<TooltipBody>Object Class: Apollyon</TooltipBody>
+</TooltipContent>
 </Tooltip>
 
 ```tsx
 <TooltipContent variant="legendary">
-  <TooltipTitle>Thunderfury</TooltipTitle>
-  <TooltipBody>Binds when picked up</TooltipBody>
+<TooltipTitle>SCP-001</TooltipTitle>
+<TooltipBody>Object Class: Apollyon</TooltipBody>
 </TooltipContent>
 ```
 
@@ -129,85 +129,85 @@ import {
 Use the `side` prop to change the position of the tooltip.
 
 <div className="flex flex-wrap gap-2">
-  <Tooltip>
-    <TooltipTrigger asChild>
-      <Button>Left</Button>
-    </TooltipTrigger>
-    <TooltipContent side="left">
-      <p>Left side</p>
-    </TooltipContent>
-  </Tooltip>
-
 <Tooltip>
-  <TooltipTrigger asChild>
-    <Button>Top</Button>
-  </TooltipTrigger>
-  <TooltipContent side="top">
-    <p>Top side</p>
-  </TooltipContent>
+<TooltipTrigger asChild>
+<Button>Left</Button>
+</TooltipTrigger>
+<TooltipContent side="left">
+<p>Left side</p>
+</TooltipContent>
 </Tooltip>
 
 <Tooltip>
-  <TooltipTrigger asChild>
-    <Button>Bottom</Button>
-  </TooltipTrigger>
-  <TooltipContent side="bottom">
-    <p>Bottom side</p>
-  </TooltipContent>
+<TooltipTrigger asChild>
+<Button>Top</Button>
+</TooltipTrigger>
+<TooltipContent side="top">
+<p>Top side</p>
+</TooltipContent>
 </Tooltip>
 
-  <Tooltip>
-    <TooltipTrigger asChild>
-      <Button>Right</Button>
-    </TooltipTrigger>
-    <TooltipContent side="right">
-      <p>Right side</p>
-    </TooltipContent>
-  </Tooltip>
+<Tooltip>
+<TooltipTrigger asChild>
+<Button>Bottom</Button>
+</TooltipTrigger>
+<TooltipContent side="bottom">
+<p>Bottom side</p>
+</TooltipContent>
+</Tooltip>
+
+<Tooltip>
+<TooltipTrigger asChild>
+<Button>Right</Button>
+</TooltipTrigger>
+<TooltipContent side="right">
+<p>Right side</p>
+</TooltipContent>
+</Tooltip>
 </div>
 
 ```tsx
 <TooltipContent side="left">
-  <p>Left side</p>
+<p>Left side</p>
 </TooltipContent>
 
 <TooltipContent side="top">
-  <p>Top side</p>
+<p>Top side</p>
 </TooltipContent>
 
 <TooltipContent side="bottom">
-  <p>Bottom side</p>
+<p>Bottom side</p>
 </TooltipContent>
 
 <TooltipContent side="right">
-  <p>Right side</p>
+<p>Right side</p>
 </TooltipContent>
 ```
 
 ## Installation
 
 ```bash
-pnpm dlx shadcn@latest add https://warcraftcn.com/r/tooltip.json
+pnpm dlx shadcn@latest add https://scpcn.com/r/tooltip.json
 ```
 
 ## Usage
 
 ```tsx
 import {
-  Tooltip,
-  TooltipBody,
-  TooltipContent,
-  TooltipTitle,
-  TooltipTrigger,
+Tooltip,
+TooltipBody,
+TooltipContent,
+TooltipTitle,
+TooltipTrigger,
 } from "@/components/ui/warcraftcn/tooltip";
 ```
 
 ```tsx
 <Tooltip>
-  <TooltipTrigger>Hover</TooltipTrigger>
-  <TooltipContent>
-    <TooltipTitle>Item Name</TooltipTitle>
-    <TooltipBody>Item description</TooltipBody>
-  </TooltipContent>
+<TooltipTrigger>Hover</TooltipTrigger>
+<TooltipContent>
+<TooltipTitle>Item Name</TooltipTitle>
+<TooltipBody>Item description</TooltipBody>
+</TooltipContent>
 </Tooltip>
 ```

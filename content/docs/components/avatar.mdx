@@ -1,135 +1,135 @@
 ---
 title: Avatar
-description: Hero or unit portrait component in Warcraft style
+description: Personnel or entity portrait component in SCP Foundation style
 ---
 
 import { Avatar } from "@/components/ui/warcraftcn/avatar";
 
-## Default   
-      
-    <div className="flex flex-row gap-2">
-      <Avatar
-        alt="Human Peasant"
-        faction="default"
-        size="sm"
-        src="/warcraftcn/human-peasant.webp"
-      />
+## Default
 
-      <Avatar
-        alt="Human Peasant"
-        faction="default"
-        size="md"
-        src="/warcraftcn/human-peasant.webp"
-      />
-      <Avatar
-        alt="Human Peasant"
-        faction="default"
-        size="lg"
-        src="/warcraftcn/human-peasant.webp"
-      />
-    </div>
+<div className="flex flex-row gap-2">
+<Avatar
+alt="D-Class Personnel"
+classification="safe"
+size="sm"
+src="/warcraftcn/human-peasant.webp"
+/>
+
+<Avatar
+alt="D-Class Personnel"
+classification="safe"
+size="md"
+src="/warcraftcn/human-peasant.webp"
+/>
+<Avatar
+alt="D-Class Personnel"
+classification="safe"
+size="lg"
+src="/warcraftcn/human-peasant.webp"
+/>
+</div>
 
 
-## Orc Faction 
-    
-    <div className="flex flex-row gap-2">
-      <Avatar
-        alt="Orc Hero"
-        faction="orc"
-        size="sm"
-        src="/warcraftcn/orc-hero.webp"
-      />
+## Keter Classification
 
-      <Avatar
-        alt="Orc Hero"
-        faction="orc"
-        size="md"
-        src="/warcraftcn/orc-hero.webp"
-      />
-      <Avatar
-        alt="Orc Hero"
-        faction="orc"
-        size="lg"
-        src="/warcraftcn/orc-hero.webp"
-      />
-    </div>
+<div className="flex flex-row gap-2">
+<Avatar
+alt="Keter Class Entity"
+classification="keter"
+size="sm"
+src="/warcraftcn/orc-hero.webp"
+/>
 
-## Elf Faction 
+<Avatar
+alt="Keter Class Entity"
+classification="keter"
+size="md"
+src="/warcraftcn/orc-hero.webp"
+/>
+<Avatar
+alt="Keter Class Entity"
+classification="keter"
+size="lg"
+src="/warcraftcn/orc-hero.webp"
+/>
+</div>
 
-    <div className="flex flex-row gap-2">
-      <Avatar
-        alt="Elf Hero"
-        faction="elf"
-        size="sm"
-        src="/warcraftcn/elf-hero.webp"
-      />
+## Euclid Classification
 
-      <Avatar
-        alt="Elf Hero"
-        faction="elf"
-        size="md"
-        src="/warcraftcn/elf-hero.webp"
-      />
-      <Avatar
-        alt="Elf Hero"
-        faction="elf"
-        size="lg"
-        src="/warcraftcn/elf-hero.webp"
-      />
-    </div>
+<div className="flex flex-row gap-2">
+<Avatar
+alt="Euclid Class Entity"
+classification="euclid"
+size="sm"
+src="/warcraftcn/elf-hero.webp"
+/>
 
-## Human Faction 
+<Avatar
+alt="Euclid Class Entity"
+classification="euclid"
+size="md"
+src="/warcraftcn/elf-hero.webp"
+/>
+<Avatar
+alt="Euclid Class Entity"
+classification="euclid"
+size="lg"
+src="/warcraftcn/elf-hero.webp"
+/>
+</div>
 
-   <div className="flex flex-row gap-2">
-      <Avatar
-        alt="Human Hero"
-        faction="human"
-        size="sm"
-        src="/warcraftcn/human-hero.webp"
-      />
+## Thaumiel Classification
 
-      <Avatar
-        alt="Human Hero"
-        faction="human"
-        size="md"
-        src="/warcraftcn/human-hero.webp"
-      />
-      <Avatar
-        alt="Human Hero"
-        faction="human"
-        size="lg"
-        src="/warcraftcn/human-hero.webp"
-      />
-    </div>
+<div className="flex flex-row gap-2">
+<Avatar
+alt="Thaumiel Class Entity"
+classification="thaumiel"
+size="sm"
+src="/warcraftcn/human-hero.webp"
+/>
 
-## Undead Faction 
-    
-     <div className="flex flex-row gap-2">
-      <Avatar
-        alt="Undead Hero"
-        faction="undead"
-        size="sm"
-        src="/warcraftcn/undead-hero.webp"
-      />
+<Avatar
+alt="Thaumiel Class Entity"
+classification="thaumiel"
+size="md"
+src="/warcraftcn/human-hero.webp"
+/>
+<Avatar
+alt="Thaumiel Class Entity"
+classification="thaumiel"
+size="lg"
+src="/warcraftcn/human-hero.webp"
+/>
+</div>
 
-      <Avatar
-         alt="Undead Hero"
-        faction="undead"
-        size="md"
-        src="/warcraftcn/undead-hero.webp"
-      />
-      <Avatar
-        alt="Undead Hero"
-        faction="undead"
-        size="lg"
-        src="/warcraftcn/undead-hero.webp"
-      />
-    </div>
-     
+## Apollyon Classification
+
+<div className="flex flex-row gap-2">
+<Avatar
+alt="Apollyon Class Entity"
+classification="apollyon"
+size="sm"
+src="/warcraftcn/undead-hero.webp"
+/>
+
+<Avatar
+alt="Apollyon Class Entity"
+classification="apollyon"
+size="md"
+src="/warcraftcn/undead-hero.webp"
+/>
+<Avatar
+alt="Apollyon Class Entity"
+classification="apollyon"
+size="lg"
+src="/warcraftcn/undead-hero.webp"
+/>
+</div>
+
 ## Installation
 
 ```bash
-pnpm dlx shadcn@latest add https://warcraftcn.com/r/avatar.json
+pnpm dlx shadcn@latest add https://scpcn.com/r/avatar.json
 ```
 
 ## Usage
@@ -138,15 +138,15 @@ pnpm dlx shadcn@latest add https://warcraftcn.com/r/avatar.json
 import { Avatar } from "@/components/ui/warcraftcn/avatar";
 
 export default function AvatarExample () {
-  return (
-    <div className="flex flex-row gap-2">
-      <Avatar alt="Human Peasant" faction="default" size="sm" src="/warcraftcn/human-peasant.webp" />
-      <Avatar alt="Orc Hero" faction="orc" size="md" src="/warcraftcn/orc-hero.webp" />
-      <Avatar alt="Elf Hero" faction="elf" size="lg" src="/warcraftcn/elf-hero.webp" />
-      <Avatar alt="Human Hero" faction="human" size="lg" src="/warcraftcn/human-hero.webp" />
-      <Avatar alt="Undead Hero" faction="undead" size="lg" src="/warcraftcn/undead-hero.webp" />
-    </div>
-  );
+return (
+<div className="flex flex-row gap-2">
+<Avatar alt="D-Class Personnel" classification="safe" size="sm" src="/warcraftcn/human-peasant.webp" />
+<Avatar alt="Keter Class Entity" classification="keter" size="md" src="/warcraftcn/orc-hero.webp" />
+<Avatar alt="Euclid Class Entity" classification="euclid" size="lg" src="/warcraftcn/elf-hero.webp" />
+<Avatar alt="Thaumiel Class Entity" classification="thaumiel" size="lg" src="/warcraftcn/human-hero.webp" />
+<Avatar alt="Apollyon Class Entity" classification="apollyon" size="lg" src="/warcraftcn/undead-hero.webp" />
+</div>
+);
 }
-      
-      ```
+
+```
