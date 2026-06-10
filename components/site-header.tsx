@@ -13,7 +13,7 @@ export function SiteHeader() {
     <header className="sticky top-0 z-50 flex h-14 w-full max-w-full shrink-0 items-center gap-2 overflow-hidden border-b bg-background/95">
       <div className="flex h-full w-full min-w-0 max-w-[1400px] items-center gap-2 px-2 md:mx-auto md:gap-5 md:border-r md:border-l md:px-6">
         <Link className="hidden items-center gap-2 md:flex" href="/">
-<Image alt="logo" height={32} src="/warcraftcn-logo.png" width={32} />{" "}
+<Image alt="logo" height={32} src="/scpcn-logo.png" width={32} />{" "}
         <h2 className="hidden font-bold md:inline-block">SCP-CN/ui</h2>
         </Link>
 
@@ -36,7 +36,7 @@ export function SiteHeader() {
           <SearchDocumentation />
           <div className="flex gap-2">
             <Link
-              href="https://github.com/TheOrcDev/warcraftcn-ui"
+              href="https://github.com/TheOrcDev/scpcn-ui"
               target="_blank"
             >
               <Button
@@ -63,7 +63,7 @@ export function SiteHeader() {
 
 export async function StarsCount() {
   const data = await fetch(
-    "https://api.github.com/repos/TheOrcDev/warcraftcn-ui"
+    "https://api.github.com/repos/TheOrcDev/scpcn-ui"
   );
   const json = await data.json();
   const stars = json.stargazers_count;

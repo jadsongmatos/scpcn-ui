@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   description:
     "A set of components inspired by SCP Foundation bureaucratic aesthetics. Clinical, monospace, redacted. Open source, copy paste ready. Works with your favorite frameworks.",
   openGraph: {
-    images: "/warcraftcn-og.png",
+    images: "/scpcn-og.png",
   },
 };
 

@@ -1,13 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Button } from "@/components/ui/warcraftcn/button";
+import { Button } from "@/components/ui/scpcn/button";
 import {
   Card,
   CardContent,
   CardFooter,
   CardHeader,
   CardTitle,
-} from "@/components/ui/warcraftcn/card";
+} from "@/components/ui/scpcn/card";
 
 export default function Home() {
   return (
@@ -30,7 +30,7 @@ export default function Home() {
             alt="logo"
             className="size-50 md:h-80 md:w-80"
             height={300}
-            src="/warcraftcn-logo.png"
+            src="/scpcn-logo.png"
             width={300}
           />
 <p className="text-center text-white">

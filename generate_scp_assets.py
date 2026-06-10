@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """
-Gerador de assets SCP para conversao warcraftcn-ui → scpcn-ui.
-Gera imagens SCP-themed via OpenRouter (Gemini) para substituir assets Warcraft.
+Gerador de assets SCP para conversao scpcn-ui → scpcn-ui.
+Gera imagens SCP-themed via OpenRouter (Gemini) para substituir assets SCP.
 
-Classificacoes SCP (substituindo faccoes Warcraft):
+Classificacoes SCP (substituindo faccoes SCP):
   default → safe     (verde clinico)
   human   → euclid   (ambar/cautela)
   orc     → keter    (vermelho perigo)
@@ -24,7 +24,7 @@ API_KEY = os.getenv("OPENROUTER_API_KEY")
 MODEL = "google/gemini-3.1-flash-image-preview"
 API_URL = "https://openrouter.ai/api/v1/chat/completions"
 
-ASSETS_DIR = Path(__file__).parent / "components" / "ui" / "warcraftcn" / "assets_scp"
+ASSETS_DIR = Path(__file__).parent / "components" / "ui" / "scpcn" / "assets_scp"
 
 HEADERS = {
     "Authorization": f"Bearer {API_KEY}",

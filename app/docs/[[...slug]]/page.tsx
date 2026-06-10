@@ -21,7 +21,7 @@ export default async function Page(props: PageProps<"/docs/[[...slug]]">) {
   const neighbours = findNeighbour(source.pageTree, page.url);
   const gitConfig = {
     user: "TheOrcDev",
-    repo: "warcraftcn-ui",
+    repo: "scpcn-ui",
     branch: "main",
   };
 

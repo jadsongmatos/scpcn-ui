@@ -1,7 +1,7 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry.json",
   "name": "scpcn",
-  "homepage": "https://warcraftcn.com",
+  "homepage": "https://scpcn.com",
   "items": [
     {
       "name": "button",
@@ -11,34 +11,34 @@
       "registryDependencies": [],
       "files": [
         {
-          "path": "components/ui/warcraftcn/button.tsx",
+          "path": "components/ui/scpcn/button.tsx",
           "type": "registry:component",
-          "target": "components/ui/warcraftcn/button.tsx"
+          "target": "components/ui/scpcn/button.tsx"
         },
         {
-          "path": "components/ui/warcraftcn/styles/warcraft.css",
+          "path": "components/ui/scpcn/styles/scp.css",
           "type": "registry:component",
-          "target": "components/ui/warcraftcn/styles/warcraft.css"
+          "target": "components/ui/scpcn/styles/scp.css"
         },
         {
-          "path": "components/ui/warcraftcn/assets/button-bg.webp",
+          "path": "components/ui/scpcn/assets/button-bg.webp",
           "type": "registry:file",
-          "target": "components/ui/warcraftcn/assets/button-bg.webp"
+          "target": "components/ui/scpcn/assets/button-bg.webp"
         },
         {
-          "path": "components/ui/warcraftcn/assets/button-bg-with-frame.webp",
+          "path": "components/ui/scpcn/assets/button-bg-with-frame.webp",
           "type": "registry:file",
-          "target": "components/ui/warcraftcn/assets/button-bg-with-frame.webp"
+          "target": "components/ui/scpcn/assets/button-bg-with-frame.webp"
         },
         {
-          "path": "components/ui/warcraftcn/assets/button-bg-with-frame-sm.webp",
+          "path": "components/ui/scpcn/assets/button-bg-with-frame-sm.webp",
           "type": "registry:file",
-          "target": "components/ui/warcraftcn/assets/button-bg-with-frame-sm.webp"
+          "target": "components/ui/scpcn/assets/button-bg-with-frame-sm.webp"
         },
         {
-          "path": "components/ui/warcraftcn/assets/button-bg-sm.webp",
+          "path": "components/ui/scpcn/assets/button-bg-sm.webp",
           "type": "registry:file",
-          "target": "components/ui/warcraftcn/assets/button-bg-sm.webp"
+          "target": "components/ui/scpcn/assets/button-bg-sm.webp"
         }
       ]
     },
@@ -50,19 +50,19 @@
       "registryDependencies": [],
       "files": [
         {
-          "path": "components/ui/warcraftcn/input.tsx",
+          "path": "components/ui/scpcn/input.tsx",
           "type": "registry:component",
-          "target": "components/ui/warcraftcn/input.tsx"
+          "target": "components/ui/scpcn/input.tsx"
         },
         {
-          "path": "components/ui/warcraftcn/styles/warcraft.css",
+          "path": "components/ui/scpcn/styles/scp.css",
           "type": "registry:component",
-          "target": "components/ui/warcraftcn/styles/warcraft.css"
+          "target": "components/ui/scpcn/styles/scp.css"
         },
         {
-          "path": "components/ui/warcraftcn/assets/input-frame.webp",
+          "path": "components/ui/scpcn/assets/input-frame.webp",
           "type": "registry:file",
-          "target": "components/ui/warcraftcn/assets/input-frame.webp"
+          "target": "components/ui/scpcn/assets/input-frame.webp"
         }
       ]
     },
@@ -74,19 +74,19 @@
       "registryDependencies": [],
       "files": [
         {
-          "path": "components/ui/warcraftcn/card.tsx",
+          "path": "components/ui/scpcn/card.tsx",
           "type": "registry:component",
-          "target": "components/ui/warcraftcn/card.tsx"
+          "target": "components/ui/scpcn/card.tsx"
         },
         {
-          "path": "components/ui/warcraftcn/styles/warcraft.css",
+          "path": "components/ui/scpcn/styles/scp.css",
           "type": "registry:component",
-          "target": "components/ui/warcraftcn/styles/warcraft.css"
+          "target": "components/ui/scpcn/styles/scp.css"
         },
         {
-          "path": "components/ui/warcraftcn/assets/card-bg.webp",
+          "path": "components/ui/scpcn/assets/card-bg.webp",
           "type": "registry:file",
-          "target": "components/ui/warcraftcn/assets/card-bg.webp"
+          "target": "components/ui/scpcn/assets/card-bg.webp"
         }
       ]
     },
@@ -98,14 +98,14 @@
       "registryDependencies": [],
       "files": [
         {
-          "path": "components/ui/warcraftcn/skeleton.tsx",
+          "path": "components/ui/scpcn/skeleton.tsx",
           "type": "registry:component",
-          "target": "components/ui/warcraftcn/skeleton.tsx"
+          "target": "components/ui/scpcn/skeleton.tsx"
         },
         {
-          "path": "components/ui/warcraftcn/styles/warcraft.css",
+          "path": "components/ui/scpcn/styles/scp.css",
           "type": "registry:component",
-          "target": "components/ui/warcraftcn/styles/warcraft.css"
+          "target": "components/ui/scpcn/styles/scp.css"
         }
       ]
     },
@@ -117,19 +117,19 @@
       "registryDependencies": [],
       "files": [
         {
-          "path": "components/ui/warcraftcn/spinner.tsx",
+          "path": "components/ui/scpcn/spinner.tsx",
           "type": "registry:component",
-          "target": "components/ui/warcraftcn/spinner.tsx"
+          "target": "components/ui/scpcn/spinner.tsx"
         },
         {
-          "path": "components/ui/warcraftcn/assets/spinner-path.ts",
+          "path": "components/ui/scpcn/assets/spinner-path.ts",
           "type": "registry:component",
-          "target": "components/ui/warcraftcn/assets/spinner-path.ts"
+          "target": "components/ui/scpcn/assets/spinner-path.ts"
         },
         {
-          "path": "components/ui/warcraftcn/styles/warcraft.css",
+          "path": "components/ui/scpcn/styles/scp.css",
           "type": "registry:component",
-          "target": "components/ui/warcraftcn/styles/warcraft.css"
+          "target": "components/ui/scpcn/styles/scp.css"
         }
       ]
     },
@@ -141,24 +141,24 @@
       "registryDependencies": [],
       "files": [
         {
-          "path": "components/ui/warcraftcn/badge.tsx",
+          "path": "components/ui/scpcn/badge.tsx",
           "type": "registry:component",
-          "target": "components/ui/warcraftcn/badge.tsx"
+          "target": "components/ui/scpcn/badge.tsx"
         },
         {
-          "path": "components/ui/warcraftcn/styles/warcraft.css",
+          "path": "components/ui/scpcn/styles/scp.css",
           "type": "registry:component",
-          "target": "components/ui/warcraftcn/styles/warcraft.css"
+          "target": "components/ui/scpcn/styles/scp.css"
         },
         {
-          "path": "components/ui/warcraftcn/assets/button-bg-with-frame.webp",
+          "path": "components/ui/scpcn/assets/button-bg-with-frame.webp",
           "type": "registry:file",
-          "target": "components/ui/warcraftcn/assets/button-bg-with-frame.webp"
+          "target": "components/ui/scpcn/assets/button-bg-with-frame.webp"
         },
         {
-          "path": "components/ui/warcraftcn/assets/button-bg.webp",
+          "path": "components/ui/scpcn/assets/button-bg.webp",
           "type": "registry:file",
-          "target": "components/ui/warcraftcn/assets/button-bg.webp"
+          "target": "components/ui/scpcn/assets/button-bg.webp"
         }
       ]
     },
@@ -167,23 +167,26 @@
       "type": "registry:component",
       "title": "SCP Dropdown Menu",
       "description": "An SCP Foundation-themed dropdown menu component with clinical styling and border-image frames",
-      "dependencies": ["radix-ui", "lucide-react"],
+      "dependencies": [
+        "radix-ui",
+        "lucide-react"
+      ],
       "registryDependencies": [],
       "files": [
         {
-          "path": "components/ui/warcraftcn/dropdown-menu.tsx",
+          "path": "components/ui/scpcn/dropdown-menu.tsx",
           "type": "registry:component",
-          "target": "components/ui/warcraftcn/dropdown-menu.tsx"
+          "target": "components/ui/scpcn/dropdown-menu.tsx"
         },
         {
-          "path": "components/ui/warcraftcn/styles/warcraft.css",
+          "path": "components/ui/scpcn/styles/scp.css",
           "type": "registry:component",
-          "target": "components/ui/warcraftcn/styles/warcraft.css"
+          "target": "components/ui/scpcn/styles/scp.css"
         },
         {
-          "path": "components/ui/warcraftcn/assets/dropdown-menu-bg.webp",
+          "path": "components/ui/scpcn/assets/dropdown-menu-bg.webp",
           "type": "registry:file",
-          "target": "components/ui/warcraftcn/assets/dropdown-menu-bg.webp"
+          "target": "components/ui/scpcn/assets/dropdown-menu-bg.webp"
         }
       ]
     },
@@ -195,19 +198,19 @@
       "registryDependencies": [],
       "files": [
         {
-          "path": "components/ui/warcraftcn/textarea.tsx",
+          "path": "components/ui/scpcn/textarea.tsx",
           "type": "registry:component",
-          "target": "components/ui/warcraftcn/textarea.tsx"
+          "target": "components/ui/scpcn/textarea.tsx"
         },
         {
-          "path": "components/ui/warcraftcn/styles/warcraft.css",
+          "path": "components/ui/scpcn/styles/scp.css",
           "type": "registry:component",
-          "target": "components/ui/warcraftcn/styles/warcraft.css"
+          "target": "components/ui/scpcn/styles/scp.css"
         },
         {
-          "path": "components/ui/warcraftcn/assets/textarea-bg.webp",
+          "path": "components/ui/scpcn/assets/textarea-bg.webp",
           "type": "registry:file",
-          "target": "components/ui/warcraftcn/assets/textarea-bg.webp"
+          "target": "components/ui/scpcn/assets/textarea-bg.webp"
         }
       ]
     },
@@ -219,39 +222,39 @@
       "registryDependencies": [],
       "files": [
         {
-          "path": "components/ui/warcraftcn/avatar.tsx",
+          "path": "components/ui/scpcn/avatar.tsx",
           "type": "registry:component",
-          "target": "components/ui/warcraftcn/avatar.tsx"
+          "target": "components/ui/scpcn/avatar.tsx"
         },
         {
-          "path": "components/ui/warcraftcn/styles/warcraft.css",
+          "path": "components/ui/scpcn/styles/scp.css",
           "type": "registry:component",
-          "target": "components/ui/warcraftcn/styles/warcraft.css"
+          "target": "components/ui/scpcn/styles/scp.css"
         },
         {
-          "path": "components/ui/warcraftcn/assets/avatar-default.webp",
+          "path": "components/ui/scpcn/assets/avatar-safe.webp",
           "type": "registry:file",
-          "target": "components/ui/warcraftcn/assets/avatar-default.webp"
+          "target": "components/ui/scpcn/assets/avatar-safe.webp"
         },
         {
-          "path": "components/ui/warcraftcn/assets/avatar-elf.webp",
+          "path": "components/ui/scpcn/assets/avatar-thaumiel.webp",
           "type": "registry:file",
-          "target": "components/ui/warcraftcn/assets/avatar-elf.webp"
+          "target": "components/ui/scpcn/assets/avatar-thaumiel.webp"
         },
         {
-          "path": "components/ui/warcraftcn/assets/avatar-human.webp",
+          "path": "components/ui/scpcn/assets/avatar-euclid.webp",
           "type": "registry:file",
-          "target": "components/ui/warcraftcn/assets/avatar-human.webp"
+          "target": "components/ui/scpcn/assets/avatar-euclid.webp"
         },
         {
-          "path": "components/ui/warcraftcn/assets/avatar-orc.webp",
+          "path": "components/ui/scpcn/assets/avatar-keter.webp",
           "type": "registry:file",
-          "target": "components/ui/warcraftcn/assets/avatar-orc.webp"
+          "target": "components/ui/scpcn/assets/avatar-keter.webp"
         },
         {
-          "path": "components/ui/warcraftcn/assets/avatar-undead.webp",
+          "path": "components/ui/scpcn/assets/avatar-apollyon.webp",
           "type": "registry:file",
-          "target": "components/ui/warcraftcn/assets/avatar-undead.webp"
+          "target": "components/ui/scpcn/assets/avatar-apollyon.webp"
         }
       ]
     },
@@ -260,18 +263,20 @@
       "type": "registry:component",
       "title": "SCP Tooltip",
       "description": "An SCP Foundation-themed tooltip component with classification-level variants (default, safe, euclid, keter, thaumiel) and side positioning support",
-      "dependencies": ["radix-ui"],
+      "dependencies": [
+        "radix-ui"
+      ],
       "registryDependencies": [],
       "files": [
         {
-          "path": "components/ui/warcraftcn/tooltip.tsx",
+          "path": "components/ui/scpcn/tooltip.tsx",
           "type": "registry:component",
-          "target": "components/ui/warcraftcn/tooltip.tsx"
+          "target": "components/ui/scpcn/tooltip.tsx"
         },
         {
-          "path": "components/ui/warcraftcn/styles/warcraft.css",
+          "path": "components/ui/scpcn/styles/scp.css",
           "type": "registry:component",
-          "target": "components/ui/warcraftcn/styles/warcraft.css"
+          "target": "components/ui/scpcn/styles/scp.css"
         }
       ]
     },
@@ -283,34 +288,14 @@
       "registryDependencies": [],
       "files": [
         {
-          "path": "components/ui/warcraftcn/cursor.tsx",
+          "path": "components/ui/scpcn/cursor.tsx",
           "type": "registry:component",
-          "target": "components/ui/warcraftcn/cursor.tsx"
+          "target": "components/ui/scpcn/cursor.tsx"
         },
         {
-          "path": "components/ui/warcraftcn/styles/warcraft.css",
+          "path": "components/ui/scpcn/styles/scp.css",
           "type": "registry:component",
-          "target": "components/ui/warcraftcn/styles/warcraft.css"
-        },
-        {
-          "path": "components/ui/warcraftcn/assets/cursors/elf.cur",
-          "type": "registry:file",
-          "target": "components/ui/warcraftcn/assets/cursors/elf.cur"
-        },
-        {
-          "path": "components/ui/warcraftcn/assets/cursors/human.cur",
-          "type": "registry:file",
-          "target": "components/ui/warcraftcn/assets/cursors/human.cur"
-        },
-        {
-          "path": "components/ui/warcraftcn/assets/cursors/orc.cur",
-          "type": "registry:file",
-          "target": "components/ui/warcraftcn/assets/cursors/orc.cur"
-        },
-        {
-          "path": "components/ui/warcraftcn/assets/cursors/undead.cur",
-          "type": "registry:file",
-          "target": "components/ui/warcraftcn/assets/cursors/undead.cur"
+          "target": "components/ui/scpcn/styles/scp.css"
         }
       ]
     },
@@ -319,18 +304,20 @@
       "type": "registry:component",
       "title": "SCP Label",
       "description": "An SCP Foundation-themed label component for form inputs with required indicator and disabled state support",
-      "dependencies": ["@radix-ui/react-label"],
+      "dependencies": [
+        "@radix-ui/react-label"
+      ],
       "registryDependencies": [],
       "files": [
         {
-          "path": "components/ui/warcraftcn/label.tsx",
+          "path": "components/ui/scpcn/label.tsx",
           "type": "registry:component",
-          "target": "components/ui/warcraftcn/label.tsx"
+          "target": "components/ui/scpcn/label.tsx"
         },
         {
-          "path": "components/ui/warcraftcn/styles/warcraft.css",
+          "path": "components/ui/scpcn/styles/scp.css",
           "type": "registry:component",
-          "target": "components/ui/warcraftcn/styles/warcraft.css"
+          "target": "components/ui/scpcn/styles/scp.css"
         }
       ]
     },
@@ -339,13 +326,17 @@
       "type": "registry:component",
       "title": "SCP Pagination",
       "description": "An SCP Foundation-themed pagination component with clinical button styling and containment glyphs.",
-      "dependencies": ["lucide-react"],
-      "registryDependencies": ["button"],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "button"
+      ],
       "files": [
         {
-          "path": "components/ui/warcraftcn/pagination.tsx",
+          "path": "components/ui/scpcn/pagination.tsx",
           "type": "registry:component",
-          "target": "components/ui/warcraftcn/pagination.tsx"
+          "target": "components/ui/scpcn/pagination.tsx"
         }
       ]
     },
@@ -354,68 +345,70 @@
       "type": "registry:component",
       "title": "SCP Checkbox",
       "description": "An SCP Foundation-themed checkbox component with classification-specific styling",
-      "dependencies": ["radix-ui"],
+      "dependencies": [
+        "radix-ui"
+      ],
       "registryDependencies": [],
       "files": [
         {
-          "path": "components/ui/warcraftcn/checkbox.tsx",
+          "path": "components/ui/scpcn/checkbox.tsx",
           "type": "registry:component",
-          "target": "components/ui/warcraftcn/checkbox.tsx"
+          "target": "components/ui/scpcn/checkbox.tsx"
         },
         {
-          "path": "components/ui/warcraftcn/styles/warcraft.css",
+          "path": "components/ui/scpcn/styles/scp.css",
           "type": "registry:component",
-          "target": "components/ui/warcraftcn/styles/warcraft.css"
+          "target": "components/ui/scpcn/styles/scp.css"
         },
         {
-          "path": "components/ui/warcraftcn/assets/checkbox-default.webp",
+          "path": "components/ui/scpcn/assets/checkbox-safe.webp",
           "type": "registry:file",
-          "target": "components/ui/warcraftcn/assets/checkbox-default.webp"
+          "target": "components/ui/scpcn/assets/checkbox-safe.webp"
         },
         {
-          "path": "components/ui/warcraftcn/assets/checkbox-default-checked.webp",
+          "path": "components/ui/scpcn/assets/checkbox-safe-checked.webp",
           "type": "registry:file",
-          "target": "components/ui/warcraftcn/assets/checkbox-default-checked.webp"
+          "target": "components/ui/scpcn/assets/checkbox-safe-checked.webp"
         },
         {
-          "path": "components/ui/warcraftcn/assets/checkbox-human.webp",
+          "path": "components/ui/scpcn/assets/checkbox-euclid.webp",
           "type": "registry:file",
-          "target": "components/ui/warcraftcn/assets/checkbox-human.webp"
+          "target": "components/ui/scpcn/assets/checkbox-euclid.webp"
         },
         {
-          "path": "components/ui/warcraftcn/assets/checkbox-human-checked.webp",
+          "path": "components/ui/scpcn/assets/checkbox-euclid-checked.webp",
           "type": "registry:file",
-          "target": "components/ui/warcraftcn/assets/checkbox-human-checked.webp"
+          "target": "components/ui/scpcn/assets/checkbox-euclid-checked.webp"
         },
         {
-          "path": "components/ui/warcraftcn/assets/checkbox-orc.webp",
+          "path": "components/ui/scpcn/assets/checkbox-keter.webp",
           "type": "registry:file",
-          "target": "components/ui/warcraftcn/assets/checkbox-orc.webp"
+          "target": "components/ui/scpcn/assets/checkbox-keter.webp"
         },
         {
-          "path": "components/ui/warcraftcn/assets/checkbox-orc-checked.webp",
+          "path": "components/ui/scpcn/assets/checkbox-keter-checked.webp",
           "type": "registry:file",
-          "target": "components/ui/warcraftcn/assets/checkbox-orc-checked.webp"
+          "target": "components/ui/scpcn/assets/checkbox-keter-checked.webp"
         },
         {
-          "path": "components/ui/warcraftcn/assets/checkbox-elf.webp",
+          "path": "components/ui/scpcn/assets/checkbox-thaumiel.webp",
           "type": "registry:file",
-          "target": "components/ui/warcraftcn/assets/checkbox-elf.webp"
+          "target": "components/ui/scpcn/assets/checkbox-thaumiel.webp"
         },
         {
-          "path": "components/ui/warcraftcn/assets/checkbox-elf-checked.webp",
+          "path": "components/ui/scpcn/assets/checkbox-thaumiel-checked.webp",
           "type": "registry:file",
-          "target": "components/ui/warcraftcn/assets/checkbox-elf-checked.webp"
+          "target": "components/ui/scpcn/assets/checkbox-thaumiel-checked.webp"
         },
         {
-          "path": "components/ui/warcraftcn/assets/checkbox-undead.webp",
+          "path": "components/ui/scpcn/assets/checkbox-apollyon.webp",
           "type": "registry:file",
-          "target": "components/ui/warcraftcn/assets/checkbox-undead.webp"
+          "target": "components/ui/scpcn/assets/checkbox-apollyon.webp"
         },
         {
-          "path": "components/ui/warcraftcn/assets/checkbox-undead-checked.webp",
+          "path": "components/ui/scpcn/assets/checkbox-apollyon-checked.webp",
           "type": "registry:file",
-          "target": "components/ui/warcraftcn/assets/checkbox-undead-checked.webp"
+          "target": "components/ui/scpcn/assets/checkbox-apollyon-checked.webp"
         }
       ]
     },
@@ -424,18 +417,20 @@
       "type": "registry:component",
       "title": "SCP Radio Group",
       "description": "An SCP Foundation-themed radio group component with containment cell styling and red glow indicators",
-      "dependencies": ["radix-ui"],
+      "dependencies": [
+        "radix-ui"
+      ],
       "registryDependencies": [],
       "files": [
         {
-          "path": "components/ui/warcraftcn/radio-group.tsx",
+          "path": "components/ui/scpcn/radio-group.tsx",
           "type": "registry:component",
-          "target": "components/ui/warcraftcn/radio-group.tsx"
+          "target": "components/ui/scpcn/radio-group.tsx"
         },
         {
-          "path": "components/ui/warcraftcn/styles/warcraft.css",
+          "path": "components/ui/scpcn/styles/scp.css",
           "type": "registry:component",
-          "target": "components/ui/warcraftcn/styles/warcraft.css"
+          "target": "components/ui/scpcn/styles/scp.css"
         }
       ]
     },
@@ -444,43 +439,30 @@
       "type": "registry:component",
       "title": "SCP Accordion",
       "description": "An SCP Foundation styled accordion component",
-      "dependencies": ["radix-ui"],
+      "dependencies": [
+        "radix-ui"
+      ],
       "registryDependencies": [],
       "files": [
         {
-          "path": "components/ui/warcraftcn/accordion.tsx",
+          "path": "components/ui/scpcn/accordion.tsx",
           "type": "registry:component",
-          "target": "components/ui/warcraftcn/accordion.tsx"
+          "target": "components/ui/scpcn/accordion.tsx"
         },
         {
-          "path": "components/ui/warcraftcn/styles/warcraft.css",
+          "path": "components/ui/scpcn/styles/scp.css",
           "type": "registry:component",
-          "target": "components/ui/warcraftcn/styles/warcraft.css"
+          "target": "components/ui/scpcn/styles/scp.css"
         },
         {
-          "path": "components/ui/warcraftcn/assets/svg/rune-stone.svg",
+          "path": "components/ui/scpcn/assets/accordion-content-bg.webp",
           "type": "registry:file",
-          "target": "components/ui/warcraftcn/assets/svg/rune-stone.svg"
+          "target": "components/ui/scpcn/assets/accordion-content-bg.webp"
         },
         {
-          "path": "components/ui/warcraftcn/assets/svg/shield.svg",
+          "path": "components/ui/scpcn/assets/accordion-header.webp",
           "type": "registry:file",
-          "target": "components/ui/warcraftcn/assets/svg/shield.svg"
-        },
-        {
-          "path": "components/ui/warcraftcn/assets/svg/sword.svg",
-          "type": "registry:file",
-          "target": "components/ui/warcraftcn/assets/svg/sword.svg"
-        },
-        {
-          "path": "components/ui/warcraftcn/assets/accordion-content-bg.webp",
-          "type": "registry:file",
-          "target": "components/ui/warcraftcn/assets/accordion-content-bg.webp"
-        },
-        {
-          "path": "components/ui/warcraftcn/assets/accordion-header.webp",
-          "type": "registry:file",
-          "target": "components/ui/warcraftcn/assets/accordion-header.webp"
+          "target": "components/ui/scpcn/assets/accordion-header.webp"
         }
       ]
     }

@@ -1,18 +1,18 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 
-import { Avatar } from "@/components/ui/warcraftcn/avatar";
-import { Badge } from "@/components/ui/warcraftcn/badge";
-import { Button } from "@/components/ui/warcraftcn/button";
+import { Avatar } from "@/components/ui/scpcn/avatar";
+import { Badge } from "@/components/ui/scpcn/badge";
+import { Button } from "@/components/ui/scpcn/button";
 import {
   Card,
   CardFooter,
   CardHeader,
   CardTitle,
-} from "@/components/ui/warcraftcn/card";
+} from "@/components/ui/scpcn/card";
 
 export const metadata: Metadata = {
-  title: "Warcraftcn Contributors",
+  title: "SCP-CN Contributors",
   description: "Meet the champions who worked on this project.",
 };
 
@@ -50,7 +50,7 @@ export default async function ContributorsPage() {
 
   try {
     const data = await fetch(
-      "https://api.github.com/repos/TheOrcDev/warcraftcn-ui/contributors"
+      "https://api.github.com/repos/TheOrcDev/scpcn-ui/contributors"
     );
 
     if (data.ok) {
@@ -62,15 +62,14 @@ export default async function ContributorsPage() {
   }
 
   return (
-    <div className="fantasy container mx-auto overflow-x-hidden px-4 py-8">
+    <div className="institutional container mx-auto overflow-x-hidden px-4 py-8">
       <div className="mb-12 text-center">
         <h1 className="mb-4 font-bold text-2xl sm:text-3xl md:text-4xl">
-          Champions of Warcraftcn
+          Champions of SCP-CN
         </h1>
         <p className="mx-auto max-w-4xl text-muted-foreground">
-          These brave heroes have pledged their skills to forge this project.
-          Their contributions, both mighty and humble, shape the world we build
-          together.
+    These dedicated contributors have applied their skills to this project.
+    Their contributions, large and small, shape what we build together.
         </p>
         <div className="mt-6 flex flex-col items-center justify-center gap-2 sm:flex-row sm:gap-4">
           <Badge className="px-6 text-xs sm:text-sm" variant={"secondary"}>
@@ -127,16 +126,16 @@ export default async function ContributorsPage() {
       </div>
 
       <div className="mx-auto mt-16 flex max-w-2xl flex-col items-center justify-center gap-4 pb-20 text-center">
-        <h2 className="text-2xl">Join the Battle!</h2>
-        <p className="text-base">
-          We welcome warriors of all skill levels. Pledge your blade to our
-          cause and help forge something legendary!
-        </p>
+      <h2 className="text-2xl">Join the Project!</h2>
+      <p className="text-base">
+        We welcome contributors of all skill levels. Help us build and
+        maintain something extraordinary!
+      </p>
         <div className="flex flex-col justify-center gap-4 sm:flex-row">
           <Button asChild>
             <Link
               className="flex items-center gap-2"
-              href="https://github.com/TheOrcDev/warcraftcn-ui"
+              href="https://github.com/TheOrcDev/scpcn-ui"
               rel="noopener noreferrer"
               target="_blank"
             >
@@ -152,7 +151,7 @@ export default async function ContributorsPage() {
           </Button>
           <Button asChild>
             <Link
-              href="https://github.com/TheOrcDev/warcraftcn-ui/blob/main/contributing.md"
+              href="https://github.com/TheOrcDev/scpcn-ui/blob/main/contributing.md"
               rel="noopener noreferrer"
               target="_blank"
             >

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 
-import { Button } from "@/components/ui/warcraftcn/button";
+import { Button } from "@/components/ui/scpcn/button";
 
 export const metadata: Metadata = {
   title: "404 | SCP-CN UI",
@@ -14,7 +14,7 @@ export default function NotFound() {
 <Image
       alt="SCP 404"
       height={300}
-      src={"/404/pixel-orc.webp"}
+      src={"/404/pixel-keter.webp"}
       width={300}
     />
 

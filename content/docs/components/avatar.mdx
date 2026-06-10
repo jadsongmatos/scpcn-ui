@@ -3,7 +3,7 @@ title: Avatar
 description: Personnel or entity portrait component in SCP Foundation style
 ---
 
-import { Avatar } from "@/components/ui/warcraftcn/avatar";
+import { Avatar } from "@/components/ui/scpcn/avatar";
 
 ## Default
 
@@ -12,20 +12,20 @@ import { Avatar } from "@/components/ui/warcraftcn/avatar";
 alt="D-Class Personnel"
 classification="safe"
 size="sm"
-src="/warcraftcn/human-peasant.webp"
+src="/scpcn/euclid-peasant.webp"
 />
 
 <Avatar
 alt="D-Class Personnel"
 classification="safe"
 size="md"
-src="/warcraftcn/human-peasant.webp"
+src="/scpcn/euclid-peasant.webp"
 />
 <Avatar
 alt="D-Class Personnel"
 classification="safe"
 size="lg"
-src="/warcraftcn/human-peasant.webp"
+src="/scpcn/euclid-peasant.webp"
 />
 </div>
 
@@ -37,20 +37,20 @@ src="/warcraftcn/human-peasant.webp"
 alt="Keter Class Entity"
 classification="keter"
 size="sm"
-src="/warcraftcn/orc-hero.webp"
+src="/scpcn/keter-hero.webp"
 />
 
 <Avatar
 alt="Keter Class Entity"
 classification="keter"
 size="md"
-src="/warcraftcn/orc-hero.webp"
+src="/scpcn/keter-hero.webp"
 />
 <Avatar
 alt="Keter Class Entity"
 classification="keter"
 size="lg"
-src="/warcraftcn/orc-hero.webp"
+src="/scpcn/keter-hero.webp"
 />
 </div>
 
@@ -61,20 +61,20 @@ src="/warcraftcn/orc-hero.webp"
 alt="Euclid Class Entity"
 classification="euclid"
 size="sm"
-src="/warcraftcn/elf-hero.webp"
+src="/scpcn/thaumiel-hero.webp"
 />
 
 <Avatar
 alt="Euclid Class Entity"
 classification="euclid"
 size="md"
-src="/warcraftcn/elf-hero.webp"
+src="/scpcn/thaumiel-hero.webp"
 />
 <Avatar
 alt="Euclid Class Entity"
 classification="euclid"
 size="lg"
-src="/warcraftcn/elf-hero.webp"
+src="/scpcn/thaumiel-hero.webp"
 />
 </div>
 
@@ -85,20 +85,20 @@ src="/warcraftcn/elf-hero.webp"
 alt="Thaumiel Class Entity"
 classification="thaumiel"
 size="sm"
-src="/warcraftcn/human-hero.webp"
+src="/scpcn/euclid-hero.webp"
 />
 
 <Avatar
 alt="Thaumiel Class Entity"
 classification="thaumiel"
 size="md"
-src="/warcraftcn/human-hero.webp"
+src="/scpcn/euclid-hero.webp"
 />
 <Avatar
 alt="Thaumiel Class Entity"
 classification="thaumiel"
 size="lg"
-src="/warcraftcn/human-hero.webp"
+src="/scpcn/euclid-hero.webp"
 />
 </div>
 
@@ -109,20 +109,20 @@ src="/warcraftcn/human-hero.webp"
 alt="Apollyon Class Entity"
 classification="apollyon"
 size="sm"
-src="/warcraftcn/undead-hero.webp"
+src="/scpcn/apollyon-hero.webp"
 />
 
 <Avatar
 alt="Apollyon Class Entity"
 classification="apollyon"
 size="md"
-src="/warcraftcn/undead-hero.webp"
+src="/scpcn/apollyon-hero.webp"
 />
 <Avatar
 alt="Apollyon Class Entity"
 classification="apollyon"
 size="lg"
-src="/warcraftcn/undead-hero.webp"
+src="/scpcn/apollyon-hero.webp"
 />
 </div>
 
@@ -135,16 +135,16 @@ pnpm dlx shadcn@latest add https://scpcn.com/r/avatar.json
 ## Usage
 
 ```tsx
-import { Avatar } from "@/components/ui/warcraftcn/avatar";
+import { Avatar } from "@/components/ui/scpcn/avatar";
 
 export default function AvatarExample () {
 return (
 <div className="flex flex-row gap-2">
-<Avatar alt="D-Class Personnel" classification="safe" size="sm" src="/warcraftcn/human-peasant.webp" />
-<Avatar alt="Keter Class Entity" classification="keter" size="md" src="/warcraftcn/orc-hero.webp" />
-<Avatar alt="Euclid Class Entity" classification="euclid" size="lg" src="/warcraftcn/elf-hero.webp" />
-<Avatar alt="Thaumiel Class Entity" classification="thaumiel" size="lg" src="/warcraftcn/human-hero.webp" />
-<Avatar alt="Apollyon Class Entity" classification="apollyon" size="lg" src="/warcraftcn/undead-hero.webp" />
+<Avatar alt="D-Class Personnel" classification="safe" size="sm" src="/scpcn/euclid-peasant.webp" />
+<Avatar alt="Keter Class Entity" classification="keter" size="md" src="/scpcn/keter-hero.webp" />
+<Avatar alt="Euclid Class Entity" classification="euclid" size="lg" src="/scpcn/thaumiel-hero.webp" />
+<Avatar alt="Thaumiel Class Entity" classification="thaumiel" size="lg" src="/scpcn/euclid-hero.webp" />
+<Avatar alt="Apollyon Class Entity" classification="apollyon" size="lg" src="/scpcn/apollyon-hero.webp" />
 </div>
 );
 }
